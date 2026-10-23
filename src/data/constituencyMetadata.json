@@ -1,0 +1,40 @@
+{
+  "id": "PC-02-SRINAGAR",
+  "name": "Srinagar",
+  "number": 2,
+  "state": "Jammu and Kashmir",
+  "type": "Parliamentary",
+  "reservation": "GEN",
+  "headquarters": "Srinagar",
+  "currentDelimitationYear": 2022,
+  "delimitationSummary": "Under the Delimitation Commission Order of May 2022 (notified for the 2024 General Elections), the 02-Srinagar Parliamentary Constituency was extensively restructured to encompass exactly 18 Legislative Assembly segments across 5 administrative districts (Ganderbal, Srinagar, Budgam, Pulwama, and Shopian). Budgam and Beerwah assembly segments were transferred out to the Baramulla constituency, while southern segments including Pampore, Tral, Pulwama, Rajpora, and Shopian were transferred into Srinagar.",
+  "districtsCovered": [
+    "Srinagar",
+    "Ganderbal",
+    "Budgam",
+    "Pulwama",
+    "Shopian"
+  ],
+  "totalAssemblySegments": 18,
+  "assemblySegmentIds": [
+    "AC-17",
+    "AC-18",
+    "AC-19",
+    "AC-20",
+    "AC-21",
+    "AC-22",
+    "AC-23",
+    "AC-24",
+    "AC-25",
+    "AC-26",
+    "AC-29",
+    "AC-30",
+    "AC-31",
+    "AC-32",
+    "AC-33",
+    "AC-34",
+    "AC-35",
+    "AC-37"
+  ],
+  "officialSourceId": "SRC-ECI-DELIM-2022"
+}

@@ -1,0 +1,157 @@
+import { describe, it, expect } from 'vitest';
+import {
+  calculateVoteShare,
+  calculateWinningMargin,
+  calculateWinningMarginPercentage,
+  calculateVoterTurnout,
+  calculateVoteShareChange,
+  compareElectionOutcomes,
+} from '../utils/calculations';
+
+describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
+  describe('calculateVoteShare', () => {
+    it('calculates correct vote share percentage for valid numbers', () => {
+      // 2024 Srinagar: Aga Ruhullah 356,866 out of 672,836 valid votes
+      const share = calculateVoteShare(356866, 672836);
+      expect(share).toBe(53.04);
+    });
+
+    it('returns null when valid votes denominator is zero', () => {
+      expect(calculateVoteShare(100, 0)).toBeNull();
+    });
+
+    it('returns null when valid votes denominator is negative', () => {
+      expect(calculateVoteShare(100, -500)).toBeNull();
+    });
+
+    it('returns null for negative candidate votes', () => {
+      expect(calculateVoteShare(-50, 1000)).toBeNull();
+    });
+
+    it('returns null when candidate votes is null or undefined', () => {
+      expect(calculateVoteShare(null, 1000)).toBeNull();
+      expect(calculateVoteShare(undefined, 1000)).toBeNull();
+    });
+
+    it('returns null when totalValidVotes is null or undefined', () => {
+      expect(calculateVoteShare(100, null)).toBeNull();
+      expect(calculateVoteShare(100, undefined)).toBeNull();
+    });
+
+    it('returns null when inputs are NaN', () => {
+      expect(calculateVoteShare(NaN, 1000)).toBeNull();
+      expect(calculateVoteShare(100, NaN)).toBeNull();
+    });
+
+    it('handles zero candidate votes safely (0.00%)', () => {
+      expect(calculateVoteShare(0, 5000)).toBe(0);
+    });
+  });
+
+  describe('calculateWinningMargin', () => {
+    it('calculates absolute difference between winner and runner-up votes', () => {
+      // 2024: 356866 - 168450 = 188416
+      expect(calculateWinningMargin(356866, 168450)).toBe(188416);
+    });
+
+    it('returns null if either candidate votes is null or undefined', () => {
+      expect(calculateWinningMargin(null, 1000)).toBeNull();
+      expect(calculateWinningMargin(1000, null)).toBeNull();
+      expect(calculateWinningMargin(undefined, undefined)).toBeNull();
+    });
+
+    it('returns null if input values are negative', () => {
+      expect(calculateWinningMargin(-10, 50)).toBeNull();
+      expect(calculateWinningMargin(50, -10)).toBeNull();
+    });
+
+    it('returns null for NaN inputs', () => {
+      expect(calculateWinningMargin(NaN, 100)).toBeNull();
+      expect(calculateWinningMargin(100, NaN)).toBeNull();
+    });
+
+    it('handles tie gracefully (0 margin)', () => {
+      expect(calculateWinningMargin(5000, 5000)).toBe(0);
+    });
+  });
+
+  describe('calculateWinningMarginPercentage', () => {
+    it('calculates margin as percentage of total valid votes', () => {
+      // 188416 margin on 672836 valid votes = 28.00%
+      expect(calculateWinningMarginPercentage(188416, 672836)).toBe(28.0);
+    });
+
+    it('returns null when totalValidVotes is zero', () => {
+      expect(calculateWinningMarginPercentage(100, 0)).toBeNull();
+    });
+
+    it('returns null when inputs are null or undefined', () => {
+      expect(calculateWinningMarginPercentage(null, 500)).toBeNull();
+      expect(calculateWinningMarginPercentage(100, null)).toBeNull();
+    });
+  });
+
+  describe('calculateVoterTurnout', () => {
+    it('calculates turnout percentage from polled votes and registered electors', () => {
+      // 672836 polled / 1747810 registered = 38.4959... rounded to 2 decimal places = 38.5
+      const turnout = calculateVoterTurnout(672836, 1747810);
+      expect(turnout).toBe(38.5);
+    });
+
+    it('returns null when registered electors is zero', () => {
+      expect(calculateVoterTurnout(500, 0)).toBeNull();
+    });
+
+    it('returns null when registered electors is negative', () => {
+      expect(calculateVoterTurnout(500, -100)).toBeNull();
+    });
+
+    it('returns null for null, undefined, or NaN inputs', () => {
+      expect(calculateVoterTurnout(null, 1000)).toBeNull();
+      expect(calculateVoterTurnout(500, null)).toBeNull();
+      expect(calculateVoterTurnout(NaN, 1000)).toBeNull();
+    });
+  });
+
+  describe('calculateVoteShareChange', () => {
+    it('calculates positive vote share change correctly', () => {
+      // e.g. 53.04% - 37.04% = +16.00%
+      expect(calculateVoteShareChange(53.04, 37.04)).toBe(16.0);
+    });
+
+    it('calculates negative vote share swing correctly', () => {
+      expect(calculateVoteShareChange(25.04, 50.58)).toBe(-25.54);
+    });
+
+    it('returns null when either share is null or undefined', () => {
+      expect(calculateVoteShareChange(null, 30)).toBeNull();
+      expect(calculateVoteShareChange(30, null)).toBeNull();
+    });
+  });
+
+  describe('compareElectionOutcomes', () => {
+    it('identifies retention by same candidate', () => {
+      const outcome = compareElectionOutcomes(
+        { electionYear: 2014, winner: { candidateName: 'Farooq Abdullah', partyName: 'National Conference', partyAbbreviation: 'JKNC' } },
+        { electionYear: 2019, winner: { candidateName: 'Farooq Abdullah', partyName: 'National Conference', partyAbbreviation: 'JKNC' } }
+      );
+      expect(outcome?.isSameCandidate).toBe(true);
+      expect(outcome?.isSameParty).toBe(true);
+      expect(outcome?.description).toContain('Retained by Farooq Abdullah');
+    });
+
+    it('identifies party shift', () => {
+      const outcome = compareElectionOutcomes(
+        { electionYear: 2009, winner: { candidateName: 'Farooq Abdullah', partyName: 'National Conference', partyAbbreviation: 'JKNC' } },
+        { electionYear: 2014, winner: { candidateName: 'Tariq Hameed Karra', partyName: 'Peoples Democratic Party', partyAbbreviation: 'JKPDP' } }
+      );
+      expect(outcome?.isSameParty).toBe(false);
+      expect(outcome?.isSameCandidate).toBe(false);
+      expect(outcome?.description).toContain('Shift from JKNC (Farooq Abdullah) to JKPDP (Tariq Hameed Karra)');
+    });
+
+    it('returns null safely if records are incomplete', () => {
+      expect(compareElectionOutcomes(null, null)).toBeNull();
+    });
+  });
+});

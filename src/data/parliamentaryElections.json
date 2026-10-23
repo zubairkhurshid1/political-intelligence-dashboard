@@ -1,0 +1,538 @@
+[
+  {
+    "electionYear": 2024,
+    "pollDate": "2024-05-13",
+    "registeredElectors": 1747810,
+    "votesPolled": 672836,
+    "validVotes": 672836,
+    "rejectedVotes": 0,
+    "notaVotes": 5998,
+    "turnoutPercentage": 38.49,
+    "winner": {
+      "candidateName": "Aga Syed Ruhullah Mehdi",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 356866,
+      "voteSharePercentage": 53.04
+    },
+    "runnerUp": {
+      "candidateName": "Waheed Ur Rehman Para",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 168450,
+      "voteSharePercentage": 25.04
+    },
+    "winningMargin": 188416,
+    "winningMarginPercentage": 28.00,
+    "totalCandidates": 24,
+    "candidates": [
+      {
+        "candidateId": "2024-CAND-01",
+        "candidateName": "Aga Syed Ruhullah Mehdi",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 356866,
+        "voteSharePercentage": 53.04,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2024-CAND-02",
+        "candidateName": "Waheed Ur Rehman Para",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 168450,
+        "voteSharePercentage": 25.04,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2024-CAND-03",
+        "candidateName": "Mohammad Ashraf Mir",
+        "partyName": "Jammu and Kashmir Apni Party",
+        "partyAbbreviation": "APNI PARTY",
+        "votes": 65954,
+        "voteSharePercentage": 9.80,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-04",
+        "candidateName": "Amir Ahmad Bhat",
+        "partyName": "Democratic Progressive Azad Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 15104,
+        "voteSharePercentage": 2.25,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-05",
+        "candidateName": "Hakikat Singh",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 12473,
+        "voteSharePercentage": 1.85,
+        "resultPosition": 5,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-06",
+        "candidateName": "Rubina Akhtar",
+        "partyName": "National Loktantrik Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 8740,
+        "voteSharePercentage": 1.30,
+        "resultPosition": 6,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-NOTA",
+        "candidateName": "None of the Above (NOTA)",
+        "partyName": "None of the Above",
+        "partyAbbreviation": "NOTA",
+        "votes": 5998,
+        "voteSharePercentage": 0.89,
+        "resultPosition": 7,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2024-CAND-OTHERS",
+        "candidateName": "Other Independent & Registered Candidates (18)",
+        "partyName": "Other Candidates",
+        "partyAbbreviation": "OTHERS",
+        "votes": 39251,
+        "voteSharePercentage": 5.83,
+        "resultPosition": 8,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-LS-2024",
+    "notes": "First Parliamentary election conducted under post-2022 redrawn constituency boundaries covering 18 Assembly segments. Voter turnout witnessed a historic resurgence to 38.49% compared to 14.43% in 2019."
+  },
+  {
+    "electionYear": 2019,
+    "pollDate": "2019-04-18",
+    "registeredElectors": 1295309,
+    "votesPolled": 186863,
+    "validVotes": 186863,
+    "rejectedVotes": 0,
+    "notaVotes": 5188,
+    "turnoutPercentage": 14.43,
+    "winner": {
+      "candidateName": "Dr. Farooq Abdullah",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 106750,
+      "voteSharePercentage": 57.13
+    },
+    "runnerUp": {
+      "candidateName": "Aga Syed Mohsin",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 36700,
+      "voteSharePercentage": 19.64
+    },
+    "winningMargin": 70050,
+    "winningMarginPercentage": 37.49,
+    "totalCandidates": 12,
+    "candidates": [
+      {
+        "candidateId": "2019-CAND-01",
+        "candidateName": "Dr. Farooq Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 106750,
+        "voteSharePercentage": 57.13,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2019-CAND-02",
+        "candidateName": "Aga Syed Mohsin",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 36700,
+        "voteSharePercentage": 19.64,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2019-CAND-03",
+        "candidateName": "Irfan Raza Ansari",
+        "partyName": "Jammu and Kashmir People's Conference",
+        "partyAbbreviation": "JKPC",
+        "votes": 28773,
+        "voteSharePercentage": 15.40,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-04",
+        "candidateName": "Sheikh Khalid Jehangir",
+        "partyName": "Bharatiya Janata Party",
+        "partyAbbreviation": "BJP",
+        "votes": 4631,
+        "voteSharePercentage": 2.48,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-NOTA",
+        "candidateName": "None of the Above (NOTA)",
+        "partyName": "None of the Above",
+        "partyAbbreviation": "NOTA",
+        "votes": 5188,
+        "voteSharePercentage": 2.78,
+        "resultPosition": 5,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2019-CAND-OTHERS",
+        "candidateName": "Other Independent Candidates (8)",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 4821,
+        "voteSharePercentage": 2.58,
+        "resultPosition": 6,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-LS-2019",
+    "notes": "Election was held under pre-2022 boundaries (Srinagar, Budgam, Ganderbal districts). Characterized by localized boycott calls resulting in 14.43% overall voter turnout."
+  },
+  {
+    "electionYear": 2017,
+    "pollDate": "2017-04-09",
+    "registeredElectors": 1261397,
+    "votesPolled": 89865,
+    "validVotes": 89865,
+    "rejectedVotes": 0,
+    "notaVotes": 931,
+    "turnoutPercentage": 7.12,
+    "winner": {
+      "candidateName": "Dr. Farooq Abdullah",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 48555,
+      "voteSharePercentage": 54.03
+    },
+    "runnerUp": {
+      "candidateName": "Nazir Ahmad Khan",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 37779,
+      "voteSharePercentage": 42.04
+    },
+    "winningMargin": 10776,
+    "winningMarginPercentage": 11.99,
+    "totalCandidates": 9,
+    "candidates": [
+      {
+        "candidateId": "2017-CAND-01",
+        "candidateName": "Dr. Farooq Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 48555,
+        "voteSharePercentage": 54.03,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2017-CAND-02",
+        "candidateName": "Nazir Ahmad Khan",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 37779,
+        "voteSharePercentage": 42.04,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2017-CAND-NOTA",
+        "candidateName": "None of the Above (NOTA)",
+        "partyName": "None of the Above",
+        "partyAbbreviation": "NOTA",
+        "votes": 931,
+        "voteSharePercentage": 1.04,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2017-CAND-OTHERS",
+        "candidateName": "Other Independent Candidates (7)",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 2600,
+        "voteSharePercentage": 2.89,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-BYE-2017",
+    "notes": "By-election necessitated by the resignation of Tariq Hameed Karra. Marked by severe civil unrest and lowest historical turnout (7.12%)."
+  },
+  {
+    "electionYear": 2014,
+    "pollDate": "2014-04-30",
+    "registeredElectors": 1207230,
+    "votesPolled": 312212,
+    "validVotes": 312212,
+    "rejectedVotes": 0,
+    "notaVotes": 4979,
+    "turnoutPercentage": 25.86,
+    "winner": {
+      "candidateName": "Tariq Hameed Karra",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 157923,
+      "voteSharePercentage": 50.58
+    },
+    "runnerUp": {
+      "candidateName": "Dr. Farooq Abdullah",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 115643,
+      "voteSharePercentage": 37.04
+    },
+    "winningMargin": 42280,
+    "winningMarginPercentage": 13.54,
+    "totalCandidates": 14,
+    "candidates": [
+      {
+        "candidateId": "2014-CAND-01",
+        "candidateName": "Tariq Hameed Karra",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 157923,
+        "voteSharePercentage": 50.58,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2014-CAND-02",
+        "candidateName": "Dr. Farooq Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 115643,
+        "voteSharePercentage": 37.04,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2014-CAND-03",
+        "candidateName": "Aga Syed Mohsin",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 16426,
+        "voteSharePercentage": 5.26,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2014-CAND-04",
+        "candidateName": "Fayaz Ahmad Bhat",
+        "partyName": "Bharatiya Janata Party",
+        "partyAbbreviation": "BJP",
+        "votes": 4467,
+        "voteSharePercentage": 1.43,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2014-CAND-NOTA",
+        "candidateName": "None of the Above (NOTA)",
+        "partyName": "None of the Above",
+        "partyAbbreviation": "NOTA",
+        "votes": 4979,
+        "voteSharePercentage": 1.59,
+        "resultPosition": 5,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2014-CAND-OTHERS",
+        "candidateName": "Other Independent Candidates (10)",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 12774,
+        "voteSharePercentage": 4.09,
+        "resultPosition": 6,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-LS-2014",
+    "notes": "Historic election where PDP defeated incumbent JKNC chief Dr. Farooq Abdullah in Srinagar constituency for the first time."
+  },
+  {
+    "electionYear": 2009,
+    "pollDate": "2009-05-07",
+    "registeredElectors": 1106729,
+    "votesPolled": 282880,
+    "validVotes": 281617,
+    "rejectedVotes": 1263,
+    "turnoutPercentage": 25.56,
+    "winner": {
+      "candidateName": "Dr. Farooq Abdullah",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 147035,
+      "voteSharePercentage": 52.21
+    },
+    "runnerUp": {
+      "candidateName": "Moulvi Iftikhar Hussain Ansari",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 116925,
+      "voteSharePercentage": 41.52
+    },
+    "winningMargin": 30110,
+    "winningMarginPercentage": 10.69,
+    "totalCandidates": 15,
+    "candidates": [
+      {
+        "candidateId": "2009-CAND-01",
+        "candidateName": "Dr. Farooq Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 147035,
+        "voteSharePercentage": 52.21,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2009-CAND-02",
+        "candidateName": "Moulvi Iftikhar Hussain Ansari",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 116925,
+        "voteSharePercentage": 41.52,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2009-CAND-03",
+        "candidateName": "Avtar Krishan",
+        "partyName": "Bharatiya Janata Party",
+        "partyAbbreviation": "BJP",
+        "votes": 2752,
+        "voteSharePercentage": 0.98,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2009-CAND-OTHERS",
+        "candidateName": "Other Independent & Small Parties (12)",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 14905,
+        "voteSharePercentage": 5.29,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-LS-2009",
+    "notes": "ECI certified statistical report for 15th Lok Sabha general election."
+  },
+  {
+    "electionYear": 2004,
+    "pollDate": "2004-04-26",
+    "registeredElectors": 1053745,
+    "votesPolled": 195678,
+    "validVotes": 195678,
+    "rejectedVotes": 0,
+    "turnoutPercentage": 18.57,
+    "winner": {
+      "candidateName": "Omar Abdullah",
+      "partyName": "Jammu & Kashmir National Conference",
+      "partyAbbreviation": "JKNC",
+      "votes": 98422,
+      "voteSharePercentage": 50.30
+    },
+    "runnerUp": {
+      "candidateName": "Ghulam Nabi Mir",
+      "partyName": "Jammu & Kashmir Peoples Democratic Party",
+      "partyAbbreviation": "JKPDP",
+      "votes": 75263,
+      "voteSharePercentage": 38.46
+    },
+    "winningMargin": 23159,
+    "winningMarginPercentage": 11.84,
+    "totalCandidates": 13,
+    "candidates": [
+      {
+        "candidateId": "2004-CAND-01",
+        "candidateName": "Omar Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 98422,
+        "voteSharePercentage": 50.30,
+        "resultPosition": 1,
+        "isWinner": true,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2004-CAND-02",
+        "candidateName": "Ghulam Nabi Mir",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 75263,
+        "voteSharePercentage": 38.46,
+        "resultPosition": 2,
+        "isWinner": false,
+        "depositLost": false
+      },
+      {
+        "candidateId": "2004-CAND-03",
+        "candidateName": "Fayaz Ahmad Bhat",
+        "partyName": "Bharatiya Janata Party",
+        "partyAbbreviation": "BJP",
+        "votes": 3088,
+        "voteSharePercentage": 1.58,
+        "resultPosition": 3,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2004-CAND-OTHERS",
+        "candidateName": "Other Independent & Small Parties (10)",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 18905,
+        "voteSharePercentage": 9.66,
+        "resultPosition": 4,
+        "isWinner": false,
+        "depositLost": true
+      }
+    ],
+    "sourceId": "SRC-ECI-LS-2004",
+    "notes": "14th Lok Sabha general election certified statistical report."
+  }
+]

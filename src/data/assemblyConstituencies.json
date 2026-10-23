@@ -1,0 +1,1472 @@
+{
+  "segments": [
+    {
+      "id": "AC-17",
+      "number": 17,
+      "name": "Kangan",
+      "district": "Ganderbal",
+      "reservation": "ST",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Reserved for Scheduled Tribes (ST) in 2022 Delimitation Order.",
+      "totalElectors2024": 78942
+    },
+    {
+      "id": "AC-18",
+      "number": 18,
+      "name": "Ganderbal",
+      "district": "Ganderbal",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Traditional stronghold seat won by Omar Abdullah in 2024.",
+      "totalElectors2024": 129750
+    },
+    {
+      "id": "AC-19",
+      "number": 19,
+      "name": "Hazratbal",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Core urban Srinagar segment bordering Dal Lake.",
+      "totalElectors2024": 112543
+    },
+    {
+      "id": "AC-20",
+      "number": 20,
+      "name": "Khanyar",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Historic downtown Shehr-e-Khaas assembly segment.",
+      "totalElectors2024": 91204
+    },
+    {
+      "id": "AC-21",
+      "number": 21,
+      "name": "Habba Kadal",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Historic old city segment with prominent Kashmiri Pandit diaspora voting presence.",
+      "totalElectors2024": 63456
+    },
+    {
+      "id": "AC-22",
+      "number": 22,
+      "name": "Lal Chowk",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Newly carved assembly segment created by the 2022 Delimitation Commission from parts of Amirakadal.",
+      "totalElectors2024": 107199
+    },
+    {
+      "id": "AC-23",
+      "number": 23,
+      "name": "Channapora",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Newly designated segment encompassing southern municipal wards of Srinagar city.",
+      "totalElectors2024": 85430
+    },
+    {
+      "id": "AC-24",
+      "number": 24,
+      "name": "Zadibal",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Major municipal segment with significant Shia population demographics.",
+      "totalElectors2024": 112864
+    },
+    {
+      "id": "AC-25",
+      "number": 25,
+      "name": "Eidgah",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Densely populated historic municipal segment of downtown Srinagar.",
+      "totalElectors2024": 62290
+    },
+    {
+      "id": "AC-26",
+      "number": 26,
+      "name": "Central Shalteng",
+      "district": "Srinagar",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Newly defined segment created by 2022 Delimitation Commission replacing parts of Batamaloo.",
+      "totalElectors2024": 107090
+    },
+    {
+      "id": "AC-29",
+      "number": 29,
+      "name": "Khansahib",
+      "district": "Budgam",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Retained in Srinagar PC while other Budgam segments were shifted to Baramulla PC.",
+      "totalElectors2024": 94520
+    },
+    {
+      "id": "AC-30",
+      "number": 30,
+      "name": "Chrar-i-Sharief",
+      "district": "Budgam",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Sufi shrine town segment retained in Srinagar Parliamentary seat.",
+      "totalElectors2024": 86320
+    },
+    {
+      "id": "AC-31",
+      "number": 31,
+      "name": "Chadoora",
+      "district": "Budgam",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Budgam agricultural-urban boundary segment.",
+      "totalElectors2024": 92100
+    },
+    {
+      "id": "AC-32",
+      "number": 32,
+      "name": "Pampore",
+      "district": "Pulwama",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Saffron bowl segment transferred into Srinagar PC from former Anantnag PC under 2022 delimitation.",
+      "totalElectors2024": 98400
+    },
+    {
+      "id": "AC-33",
+      "number": 33,
+      "name": "Tral",
+      "district": "Pulwama",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Transferred into Srinagar PC from former Anantnag PC under 2022 delimitation.",
+      "totalElectors2024": 101250
+    },
+    {
+      "id": "AC-34",
+      "number": 34,
+      "name": "Pulwama",
+      "district": "Pulwama",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "District headquarters segment transferred into Srinagar PC under 2022 delimitation.",
+      "totalElectors2024": 95680
+    },
+    {
+      "id": "AC-35",
+      "number": 35,
+      "name": "Rajpora",
+      "district": "Pulwama",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "South Kashmir agrarian segment transferred into Srinagar PC under 2022 delimitation.",
+      "totalElectors2024": 109840
+    },
+    {
+      "id": "AC-37",
+      "number": 37,
+      "name": "Shopian",
+      "district": "Shopian",
+      "reservation": "GEN",
+      "delimitationStatus": "Post-2022 Delimitation",
+      "delimitationNotes": "Apple bowl headquarters segment transferred into Srinagar PC under 2022 delimitation.",
+      "totalElectors2024": 100410
+    }
+  ],
+  "assemblyResults": [
+    {
+      "assemblyId": "AC-17",
+      "assemblyNumber": 17,
+      "assemblyName": "Kangan",
+      "district": "Ganderbal",
+      "electionYear": 2024,
+      "registeredElectors": 78942,
+      "validVotes": 56420,
+      "turnoutPercentage": 71.47,
+      "winner": {
+        "candidateName": "Mian Mehar Ali",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 28907,
+        "voteSharePercentage": 51.24
+      },
+      "runnerUp": {
+        "candidateName": "Syed Jamat Ali Shah",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 25088,
+        "voteSharePercentage": 44.47
+      },
+      "winningMargin": 3819,
+      "winningMarginPercentage": 6.77,
+      "candidates": [
+        {
+          "candidateId": "AC17-2024-01",
+          "candidateName": "Mian Mehar Ali",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 28907,
+          "voteSharePercentage": 51.24,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC17-2024-02",
+          "candidateName": "Syed Jamat Ali Shah",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 25088,
+          "voteSharePercentage": 44.47,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC17-2024-03",
+          "candidateName": "Other Candidates / NOTA",
+          "partyName": "Independent / Others",
+          "partyAbbreviation": "IND",
+          "votes": 2425,
+          "voteSharePercentage": 4.29,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "High participation rate in Gujjar-dominated ST reserved constituency."
+    },
+    {
+      "assemblyId": "AC-18",
+      "assemblyNumber": 18,
+      "assemblyName": "Ganderbal",
+      "district": "Ganderbal",
+      "electionYear": 2024,
+      "registeredElectors": 129750,
+      "validVotes": 74350,
+      "turnoutPercentage": 57.30,
+      "winner": {
+        "candidateName": "Omar Abdullah",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 32727,
+        "voteSharePercentage": 44.02
+      },
+      "runnerUp": {
+        "candidateName": "Bashir Ahmed Mir",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 22153,
+        "voteSharePercentage": 29.80
+      },
+      "winningMargin": 10574,
+      "winningMarginPercentage": 14.22,
+      "candidates": [
+        {
+          "candidateId": "AC18-2024-01",
+          "candidateName": "Omar Abdullah",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 32727,
+          "voteSharePercentage": 44.02,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC18-2024-02",
+          "candidateName": "Bashir Ahmed Mir",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 22153,
+          "voteSharePercentage": 29.80,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC18-2024-03",
+          "candidateName": "Ishfaq Ahmad Sheikh",
+          "partyName": "Independent",
+          "partyAbbreviation": "IND",
+          "votes": 12220,
+          "voteSharePercentage": 16.44,
+          "resultPosition": 3,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC18-2024-04",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 7250,
+          "voteSharePercentage": 9.74,
+          "resultPosition": 4,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Omar Abdullah secured decisive victory and subsequently took oath as Chief Minister of Jammu and Kashmir."
+    },
+    {
+      "assemblyId": "AC-19",
+      "assemblyNumber": 19,
+      "assemblyName": "Hazratbal",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 112543,
+      "validVotes": 37240,
+      "turnoutPercentage": 33.09,
+      "winner": {
+        "candidateName": "Salman Ali Sagar",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 18890,
+        "voteSharePercentage": 50.72
+      },
+      "runnerUp": {
+        "candidateName": "Asiea Naqash",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 8595,
+        "voteSharePercentage": 23.08
+      },
+      "winningMargin": 10295,
+      "winningMarginPercentage": 27.64,
+      "candidates": [
+        {
+          "candidateId": "AC19-2024-01",
+          "candidateName": "Salman Ali Sagar",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 18890,
+          "voteSharePercentage": 50.72,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC19-2024-02",
+          "candidateName": "Asiea Naqash",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 8595,
+          "voteSharePercentage": 23.08,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC19-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 9755,
+          "voteSharePercentage": 26.20,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "JKNC regained seat previously held by PDP in 2014."
+    },
+    {
+      "assemblyId": "AC-20",
+      "assemblyNumber": 20,
+      "assemblyName": "Khanyar",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 91204,
+      "validVotes": 24250,
+      "turnoutPercentage": 26.59,
+      "winner": {
+        "candidateName": "Ali Mohammad Sagar",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 14906,
+        "voteSharePercentage": 61.47
+      },
+      "runnerUp": {
+        "candidateName": "Tafazul Mushtaq",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 4994,
+        "voteSharePercentage": 20.59
+      },
+      "winningMargin": 9912,
+      "winningMarginPercentage": 40.88,
+      "candidates": [
+        {
+          "candidateId": "AC20-2024-01",
+          "candidateName": "Ali Mohammad Sagar",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 14906,
+          "voteSharePercentage": 61.47,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC20-2024-02",
+          "candidateName": "Tafazul Mushtaq",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 4994,
+          "voteSharePercentage": 20.59,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC20-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 4350,
+          "voteSharePercentage": 17.94,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Ali Mohammad Sagar won his seventh consecutive legislative term."
+    },
+    {
+      "assemblyId": "AC-21",
+      "assemblyNumber": 21,
+      "assemblyName": "Habba Kadal",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 63456,
+      "validVotes": 17820,
+      "turnoutPercentage": 28.08,
+      "winner": {
+        "candidateName": "Shamim Firdous",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 12437,
+        "voteSharePercentage": 69.79
+      },
+      "runnerUp": {
+        "candidateName": "Ashok Kumar Bhat",
+        "partyName": "Bharatiya Janata Party",
+        "partyAbbreviation": "BJP",
+        "votes": 2899,
+        "voteSharePercentage": 16.27
+      },
+      "winningMargin": 9538,
+      "winningMarginPercentage": 53.52,
+      "candidates": [
+        {
+          "candidateId": "AC21-2024-01",
+          "candidateName": "Shamim Firdous",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 12437,
+          "voteSharePercentage": 69.79,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC21-2024-02",
+          "candidateName": "Ashok Kumar Bhat",
+          "partyName": "Bharatiya Janata Party",
+          "partyAbbreviation": "BJP",
+          "votes": 2899,
+          "voteSharePercentage": 16.27,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC21-2024-03",
+          "candidateName": "Arif Laigaroo",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 1540,
+          "voteSharePercentage": 8.64,
+          "resultPosition": 3,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC21-2024-04",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 944,
+          "voteSharePercentage": 5.30,
+          "resultPosition": 4,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Highest single-candidate vote share across Srinagar district (69.79%)."
+    },
+    {
+      "assemblyId": "AC-22",
+      "assemblyNumber": 22,
+      "assemblyName": "Lal Chowk",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 107199,
+      "validVotes": 34980,
+      "turnoutPercentage": 32.63,
+      "winner": {
+        "candidateName": "Sheikh Ahsan Ahmed",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 16731,
+        "voteSharePercentage": 47.83
+      },
+      "runnerUp": {
+        "candidateName": "Mohammad Ashraf Mir",
+        "partyName": "Jammu and Kashmir Apni Party",
+        "partyAbbreviation": "APNI PARTY",
+        "votes": 5388,
+        "voteSharePercentage": 15.40
+      },
+      "winningMargin": 11343,
+      "winningMarginPercentage": 32.43,
+      "candidates": [
+        {
+          "candidateId": "AC22-2024-01",
+          "candidateName": "Sheikh Ahsan Ahmed",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 16731,
+          "voteSharePercentage": 47.83,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC22-2024-02",
+          "candidateName": "Mohammad Ashraf Mir",
+          "partyName": "Jammu and Kashmir Apni Party",
+          "partyAbbreviation": "APNI PARTY",
+          "votes": 5388,
+          "voteSharePercentage": 15.40,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC22-2024-03",
+          "candidateName": "Er. Aijaz Hussain",
+          "partyName": "Bharatiya Janata Party",
+          "partyAbbreviation": "BJP",
+          "votes": 3281,
+          "voteSharePercentage": 9.38,
+          "resultPosition": 3,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC22-2024-04",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 9580,
+          "voteSharePercentage": 27.39,
+          "resultPosition": 4,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "First election for newly created Lal Chowk assembly segment post-2022 delimitation."
+    },
+    {
+      "assemblyId": "AC-23",
+      "assemblyNumber": 23,
+      "assemblyName": "Channapora",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 85430,
+      "validVotes": 27890,
+      "turnoutPercentage": 32.65,
+      "winner": {
+        "candidateName": "Mushtaq Guroo",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 13717,
+        "voteSharePercentage": 49.18
+      },
+      "runnerUp": {
+        "candidateName": "Syed Mohammad Altaf Bukhari",
+        "partyName": "Jammu and Kashmir Apni Party",
+        "partyAbbreviation": "APNI PARTY",
+        "votes": 8029,
+        "voteSharePercentage": 28.79
+      },
+      "winningMargin": 5688,
+      "winningMarginPercentage": 20.39,
+      "candidates": [
+        {
+          "candidateId": "AC23-2024-01",
+          "candidateName": "Mushtaq Guroo",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 13717,
+          "voteSharePercentage": 49.18,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC23-2024-02",
+          "candidateName": "Syed Mohammad Altaf Bukhari",
+          "partyName": "Jammu and Kashmir Apni Party",
+          "partyAbbreviation": "APNI PARTY",
+          "votes": 8029,
+          "voteSharePercentage": 28.79,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC23-2024-03",
+          "candidateName": "Mohammed Iqbal Trumboo",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 3678,
+          "voteSharePercentage": 13.19,
+          "resultPosition": 3,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC23-2024-04",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 2466,
+          "voteSharePercentage": 8.84,
+          "resultPosition": 4,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "High profile battle where Apni Party chief Altaf Bukhari was defeated by JKNC newcomer Mushtaq Guroo."
+    },
+    {
+      "assemblyId": "AC-24",
+      "assemblyNumber": 24,
+      "assemblyName": "Zadibal",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 112864,
+      "validVotes": 37120,
+      "turnoutPercentage": 32.89,
+      "winner": {
+        "candidateName": "Tanvir Sadiq",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 22189,
+        "voteSharePercentage": 59.78
+      },
+      "runnerUp": {
+        "candidateName": "Abid Hussain Ansari",
+        "partyName": "Jammu and Kashmir People's Conference",
+        "partyAbbreviation": "JKPC",
+        "votes": 6016,
+        "voteSharePercentage": 16.21
+      },
+      "winningMargin": 16173,
+      "winningMarginPercentage": 43.57,
+      "candidates": [
+        {
+          "candidateId": "AC24-2024-01",
+          "candidateName": "Tanvir Sadiq",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 22189,
+          "voteSharePercentage": 59.78,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC24-2024-02",
+          "candidateName": "Abid Hussain Ansari",
+          "partyName": "Jammu and Kashmir People's Conference",
+          "partyAbbreviation": "JKPC",
+          "votes": 6016,
+          "voteSharePercentage": 16.21,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC24-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 8915,
+          "voteSharePercentage": 24.01,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Decisive victory for JKNC chief spokesperson Tanvir Sadiq."
+    },
+    {
+      "assemblyId": "AC-25",
+      "assemblyNumber": 25,
+      "assemblyName": "Eidgah",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 62290,
+      "validVotes": 21850,
+      "turnoutPercentage": 35.08,
+      "winner": {
+        "candidateName": "Mubarik Gul",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 7779,
+        "voteSharePercentage": 35.60
+      },
+      "runnerUp": {
+        "candidateName": "Ghulam Nabi Bhat",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 6099,
+        "voteSharePercentage": 27.91
+      },
+      "winningMargin": 1680,
+      "winningMarginPercentage": 7.69,
+      "candidates": [
+        {
+          "candidateId": "AC25-2024-01",
+          "candidateName": "Mubarik Gul",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 7779,
+          "voteSharePercentage": 35.60,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC25-2024-02",
+          "candidateName": "Ghulam Nabi Bhat",
+          "partyName": "Independent",
+          "partyAbbreviation": "IND",
+          "votes": 6099,
+          "voteSharePercentage": 27.91,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC25-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 7972,
+          "voteSharePercentage": 36.49,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Narrow victory margin in downtown Srinagar."
+    },
+    {
+      "assemblyId": "AC-26",
+      "assemblyNumber": 26,
+      "assemblyName": "Central Shalteng",
+      "district": "Srinagar",
+      "electionYear": 2024,
+      "registeredElectors": 107090,
+      "validVotes": 33450,
+      "turnoutPercentage": 31.24,
+      "winner": {
+        "candidateName": "Tariq Hameed Karra",
+        "partyName": "Indian National Congress",
+        "partyAbbreviation": "INC",
+        "votes": 18933,
+        "voteSharePercentage": 56.60
+      },
+      "runnerUp": {
+        "candidateName": "Muhammad Irfan Shah",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 4538,
+        "voteSharePercentage": 13.57
+      },
+      "winningMargin": 14395,
+      "winningMarginPercentage": 43.03,
+      "candidates": [
+        {
+          "candidateId": "AC26-2024-01",
+          "candidateName": "Tariq Hameed Karra",
+          "partyName": "Indian National Congress",
+          "partyAbbreviation": "INC",
+          "votes": 18933,
+          "voteSharePercentage": 56.60,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC26-2024-02",
+          "candidateName": "Muhammad Irfan Shah",
+          "partyName": "Independent",
+          "partyAbbreviation": "IND",
+          "votes": 4538,
+          "voteSharePercentage": 13.57,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC26-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 9979,
+          "voteSharePercentage": 29.83,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "J&K Congress chief Tariq Hameed Karra won seat under INC-NC pre-poll alliance."
+    },
+    {
+      "assemblyId": "AC-29",
+      "assemblyNumber": 29,
+      "assemblyName": "Khansahib",
+      "district": "Budgam",
+      "electionYear": 2024,
+      "registeredElectors": 94520,
+      "validVotes": 67340,
+      "turnoutPercentage": 71.24,
+      "winner": {
+        "candidateName": "Saif Ud Din Bhat",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 33225,
+        "voteSharePercentage": 49.34
+      },
+      "runnerUp": {
+        "candidateName": "Hakeem Mohammad Yaseen Shah",
+        "partyName": "Jammu and Kashmir People's Democratic Front (Secular)",
+        "partyAbbreviation": "PDF",
+        "votes": 29211,
+        "voteSharePercentage": 43.38
+      },
+      "winningMargin": 4014,
+      "winningMarginPercentage": 5.96,
+      "candidates": [
+        {
+          "candidateId": "AC29-2024-01",
+          "candidateName": "Saif Ud Din Bhat",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 33225,
+          "voteSharePercentage": 49.34,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC29-2024-02",
+          "candidateName": "Hakeem Mohammad Yaseen Shah",
+          "partyName": "Jammu and Kashmir People's Democratic Front (Secular)",
+          "partyAbbreviation": "PDF",
+          "votes": 29211,
+          "voteSharePercentage": 43.38,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC29-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 4904,
+          "voteSharePercentage": 7.28,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "JKNC defeated long-term regional veteran Hakeem Yaseen."
+    },
+    {
+      "assemblyId": "AC-30",
+      "assemblyNumber": 30,
+      "assemblyName": "Chrar-i-Sharief",
+      "district": "Budgam",
+      "electionYear": 2024,
+      "registeredElectors": 86320,
+      "validVotes": 60520,
+      "turnoutPercentage": 70.11,
+      "winner": {
+        "candidateName": "Advocate Ghulam Nabi Lone Hanjura",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 28654,
+        "voteSharePercentage": 47.35
+      },
+      "runnerUp": {
+        "candidateName": "Ali Mohammad Dar",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 26982,
+        "voteSharePercentage": 44.58
+      },
+      "winningMargin": 1672,
+      "winningMarginPercentage": 2.76,
+      "candidates": [
+        {
+          "candidateId": "AC30-2024-01",
+          "candidateName": "Advocate Ghulam Nabi Lone Hanjura",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 28654,
+          "voteSharePercentage": 47.35,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC30-2024-02",
+          "candidateName": "Ali Mohammad Dar",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 26982,
+          "voteSharePercentage": 44.58,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC30-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 4884,
+          "voteSharePercentage": 8.07,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Close contest won by senior PDP leader Lone Hanjura."
+    },
+    {
+      "assemblyId": "AC-31",
+      "assemblyNumber": 31,
+      "assemblyName": "Chadoora",
+      "district": "Budgam",
+      "electionYear": 2024,
+      "registeredElectors": 92100,
+      "validVotes": 50120,
+      "turnoutPercentage": 54.42,
+      "winner": {
+        "candidateName": "Ali Mohammad Dar",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 23567,
+        "voteSharePercentage": 47.02
+      },
+      "runnerUp": {
+        "candidateName": "Mohammad Yaseen Bhat",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 17215,
+        "voteSharePercentage": 34.35
+      },
+      "winningMargin": 6352,
+      "winningMarginPercentage": 12.67,
+      "candidates": [
+        {
+          "candidateId": "AC31-2024-01",
+          "candidateName": "Ali Mohammad Dar",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 23567,
+          "voteSharePercentage": 47.02,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC31-2024-02",
+          "candidateName": "Mohammad Yaseen Bhat",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 17215,
+          "voteSharePercentage": 34.35,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC31-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 9338,
+          "voteSharePercentage": 18.63,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "JKNC victory in central Budgam plain segment."
+    },
+    {
+      "assemblyId": "AC-32",
+      "assemblyNumber": 32,
+      "assemblyName": "Pampore",
+      "district": "Pulwama",
+      "electionYear": 2024,
+      "registeredElectors": 98400,
+      "validVotes": 44100,
+      "turnoutPercentage": 44.82,
+      "winner": {
+        "candidateName": "Hasnain Masoodi",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 15088,
+        "voteSharePercentage": 34.21
+      },
+      "runnerUp": {
+        "candidateName": "Zahoor Ahmad Mir",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 12325,
+        "voteSharePercentage": 27.95
+      },
+      "winningMargin": 2763,
+      "winningMarginPercentage": 6.27,
+      "candidates": [
+        {
+          "candidateId": "AC32-2024-01",
+          "candidateName": "Hasnain Masoodi",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 15088,
+          "voteSharePercentage": 34.21,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC32-2024-02",
+          "candidateName": "Zahoor Ahmad Mir",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 12325,
+          "voteSharePercentage": 27.95,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC32-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 16687,
+          "voteSharePercentage": 37.84,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Former High Court Judge and MP Hasnain Masoodi won in Pampore."
+    },
+    {
+      "assemblyId": "AC-33",
+      "assemblyNumber": 33,
+      "assemblyName": "Tral",
+      "district": "Pulwama",
+      "electionYear": 2024,
+      "registeredElectors": 101250,
+      "validVotes": 43500,
+      "turnoutPercentage": 42.96,
+      "winner": {
+        "candidateName": "Rafiq Ahmad Naik",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 10710,
+        "voteSharePercentage": 24.62
+      },
+      "runnerUp": {
+        "candidateName": "Surinder Singh",
+        "partyName": "Indian National Congress",
+        "partyAbbreviation": "INC",
+        "votes": 10250,
+        "voteSharePercentage": 23.56
+      },
+      "winningMargin": 460,
+      "winningMarginPercentage": 1.06,
+      "candidates": [
+        {
+          "candidateId": "AC33-2024-01",
+          "candidateName": "Rafiq Ahmad Naik",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 10710,
+          "voteSharePercentage": 24.62,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC33-2024-02",
+          "candidateName": "Surinder Singh",
+          "partyName": "Indian National Congress",
+          "partyAbbreviation": "INC",
+          "votes": 10250,
+          "voteSharePercentage": 23.56,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC33-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 22540,
+          "voteSharePercentage": 51.82,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Extremely tight three-way contest in Tral decided by only 460 votes."
+    },
+    {
+      "assemblyId": "AC-34",
+      "assemblyNumber": 34,
+      "assemblyName": "Pulwama",
+      "district": "Pulwama",
+      "electionYear": 2024,
+      "registeredElectors": 95680,
+      "validVotes": 48210,
+      "turnoutPercentage": 50.39,
+      "winner": {
+        "candidateName": "Waheed Ur Rehman Para",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 24716,
+        "voteSharePercentage": 51.27
+      },
+      "runnerUp": {
+        "candidateName": "Mohammad Khalil Bandh",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 16568,
+        "voteSharePercentage": 34.37
+      },
+      "winningMargin": 8148,
+      "winningMarginPercentage": 16.90,
+      "candidates": [
+        {
+          "candidateId": "AC34-2024-01",
+          "candidateName": "Waheed Ur Rehman Para",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 24716,
+          "voteSharePercentage": 51.27,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC34-2024-02",
+          "candidateName": "Mohammad Khalil Bandh",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 16568,
+          "voteSharePercentage": 34.37,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC34-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 6926,
+          "voteSharePercentage": 14.37,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "PDP youth leader Waheed Para registered major victory in Pulwama town."
+    },
+    {
+      "assemblyId": "AC-35",
+      "assemblyNumber": 35,
+      "assemblyName": "Rajpora",
+      "district": "Pulwama",
+      "electionYear": 2024,
+      "registeredElectors": 109840,
+      "validVotes": 53200,
+      "turnoutPercentage": 48.43,
+      "winner": {
+        "candidateName": "Ghulam Mohi-ud-din Mir",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 25796,
+        "voteSharePercentage": 48.49
+      },
+      "runnerUp": {
+        "candidateName": "Syed Bashir Ahmad",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 11483,
+        "voteSharePercentage": 21.58
+      },
+      "winningMargin": 14313,
+      "winningMarginPercentage": 26.90,
+      "candidates": [
+        {
+          "candidateId": "AC35-2024-01",
+          "candidateName": "Ghulam Mohi-ud-din Mir",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 25796,
+          "voteSharePercentage": 48.49,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC35-2024-02",
+          "candidateName": "Syed Bashir Ahmad",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 11483,
+          "voteSharePercentage": 21.58,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC35-2024-03",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 15921,
+          "voteSharePercentage": 29.93,
+          "resultPosition": 3,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Decisive JKNC win in Rajpora."
+    },
+    {
+      "assemblyId": "AC-37",
+      "assemblyNumber": 37,
+      "assemblyName": "Shopian",
+      "district": "Shopian",
+      "electionYear": 2024,
+      "registeredElectors": 100410,
+      "validVotes": 58240,
+      "turnoutPercentage": 58.00,
+      "winner": {
+        "candidateName": "Shabir Ahmad Kullay",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 14113,
+        "voteSharePercentage": 24.23
+      },
+      "runnerUp": {
+        "candidateName": "Sheikh Mohammad Rafi",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 12906,
+        "voteSharePercentage": 22.16
+      },
+      "winningMargin": 1207,
+      "winningMarginPercentage": 2.07,
+      "candidates": [
+        {
+          "candidateId": "AC37-2024-01",
+          "candidateName": "Shabir Ahmad Kullay",
+          "partyName": "Independent",
+          "partyAbbreviation": "IND",
+          "votes": 14113,
+          "voteSharePercentage": 24.23,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC37-2024-02",
+          "candidateName": "Sheikh Mohammad Rafi",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 12906,
+          "voteSharePercentage": 22.16,
+          "resultPosition": 2,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC37-2024-03",
+          "candidateName": "Yawar Shafi Banday",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 11780,
+          "voteSharePercentage": 20.23,
+          "resultPosition": 3,
+          "isWinner": false
+        },
+        {
+          "candidateId": "AC37-2024-04",
+          "candidateName": "Others / NOTA",
+          "partyName": "Others",
+          "partyAbbreviation": "OTHERS",
+          "votes": 19441,
+          "voteSharePercentage": 33.38,
+          "resultPosition": 4,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2024",
+      "isDataAvailable": true,
+      "notes": "Independent candidate victory in four-way split contest."
+    },
+    {
+      "assemblyId": "AC-18",
+      "assemblyNumber": 18,
+      "assemblyName": "Ganderbal",
+      "district": "Ganderbal",
+      "electionYear": 2014,
+      "registeredElectors": 90582,
+      "validVotes": 53540,
+      "turnoutPercentage": 59.11,
+      "winner": {
+        "candidateName": "Ishfaq Ahmad Sheikh",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 19478,
+        "voteSharePercentage": 36.38
+      },
+      "runnerUp": {
+        "candidateName": "Sheikh Ghulam Rasool",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 18881,
+        "voteSharePercentage": 35.26
+      },
+      "winningMargin": 597,
+      "winningMarginPercentage": 1.12,
+      "candidates": [
+        {
+          "candidateId": "AC18-2014-01",
+          "candidateName": "Ishfaq Ahmad Sheikh",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 19478,
+          "voteSharePercentage": 36.38,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC18-2014-02",
+          "candidateName": "Sheikh Ghulam Rasool",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 18881,
+          "voteSharePercentage": 35.26,
+          "resultPosition": 2,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2014",
+      "isDataAvailable": true,
+      "notes": "Pre-2022 delimitation segment boundaries."
+    },
+    {
+      "assemblyId": "AC-20",
+      "assemblyNumber": 20,
+      "assemblyName": "Khanyar",
+      "district": "Srinagar",
+      "electionYear": 2014,
+      "registeredElectors": 51225,
+      "validVotes": 13340,
+      "turnoutPercentage": 26.04,
+      "winner": {
+        "candidateName": "Ali Mohammad Sagar",
+        "partyName": "Jammu & Kashmir National Conference",
+        "partyAbbreviation": "JKNC",
+        "votes": 6505,
+        "voteSharePercentage": 48.76
+      },
+      "runnerUp": {
+        "candidateName": "Mohammad Khurshid Alam",
+        "partyName": "Jammu & Kashmir Peoples Democratic Party",
+        "partyAbbreviation": "JKPDP",
+        "votes": 5338,
+        "voteSharePercentage": 40.01
+      },
+      "winningMargin": 1167,
+      "winningMarginPercentage": 8.75,
+      "candidates": [
+        {
+          "candidateId": "AC20-2014-01",
+          "candidateName": "Ali Mohammad Sagar",
+          "partyName": "Jammu & Kashmir National Conference",
+          "partyAbbreviation": "JKNC",
+          "votes": 6505,
+          "voteSharePercentage": 48.76,
+          "resultPosition": 1,
+          "isWinner": true
+        },
+        {
+          "candidateId": "AC20-2014-02",
+          "candidateName": "Mohammad Khurshid Alam",
+          "partyName": "Jammu & Kashmir Peoples Democratic Party",
+          "partyAbbreviation": "JKPDP",
+          "votes": 5338,
+          "voteSharePercentage": 40.01,
+          "resultPosition": 2,
+          "isWinner": false
+        }
+      ],
+      "sourceId": "SRC-ECI-AE-2014",
+      "isDataAvailable": true,
+      "notes": "Pre-delimitation 2014 election results."
+    },
+    {
+      "assemblyId": "AC-22",
+      "assemblyNumber": 22,
+      "assemblyName": "Lal Chowk",
+      "district": "Srinagar",
+      "electionYear": 2014,
+      "registeredElectors": null,
+      "validVotes": null,
+      "turnoutPercentage": null,
+      "winner": null,
+      "runnerUp": null,
+      "winningMargin": null,
+      "winningMarginPercentage": null,
+      "candidates": [],
+      "sourceId": "SRC-ECI-DELIM-2022",
+      "isDataAvailable": false,
+      "notes": "Constituency did not exist in the 2014 Legislative Assembly elections. It was established under the Delimitation Commission Order 2022 by partitioning parts of the former Amirakadal constituency."
+    },
+    {
+      "assemblyId": "AC-26",
+      "assemblyNumber": 26,
+      "assemblyName": "Central Shalteng",
+      "district": "Srinagar",
+      "electionYear": 2014,
+      "registeredElectors": null,
+      "validVotes": null,
+      "turnoutPercentage": null,
+      "winner": null,
+      "runnerUp": null,
+      "winningMargin": null,
+      "winningMarginPercentage": null,
+      "candidates": [],
+      "sourceId": "SRC-ECI-DELIM-2022",
+      "isDataAvailable": false,
+      "notes": "Constituency did not exist in 2014. Created under 2022 Delimitation from the former Batamaloo constituency."
+    }
+  ]
+}
