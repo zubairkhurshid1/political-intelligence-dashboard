@@ -9,21 +9,11 @@ import {
   ResponsiveContainer,
   Legend,
 } from 'recharts';
+import type { PartyVoteShareTrendPoint } from '../../types/election';
 import { formatPercentage, PARTY_COLORS } from '../../utils/formatters';
 
-interface TrendDataPoint {
-  year: number;
-  JKNC?: number;
-  JKPDP?: number;
-  BJP?: number;
-  INC?: number;
-  'APNI PARTY'?: number;
-  JKPC?: number;
-  turnout: number;
-}
-
 interface PartyVoteShareLineChartProps {
-  data: TrendDataPoint[];
+  data: PartyVoteShareTrendPoint[];
 }
 
 interface CustomTooltipProps {

@@ -9,25 +9,17 @@ import {
   ResponsiveContainer,
   Cell,
 } from 'recharts';
+import type { MarginTrendPoint } from '../../types/election';
 import { formatIndianNumber, formatPercentage, getPartyColor } from '../../utils/formatters';
 
-interface MarginDataPoint {
-  year: number;
-  winningMargin: number;
-  winningMarginPercentage: number;
-  winner: string;
-  party: string;
-  turnout: number;
-}
-
 interface WinningMarginChartProps {
-  data: MarginDataPoint[];
+  data: MarginTrendPoint[];
 }
 
 interface CustomTooltipProps {
   active?: boolean;
   payload?: Array<{
-    payload: MarginDataPoint;
+    payload: MarginTrendPoint;
   }>;
 }
 

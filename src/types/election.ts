@@ -142,3 +142,25 @@ export interface CalculatedElectoralMetrics {
   winningMarginPercentage: number | null;
   turnoutPercentage: number | null;
 }
+
+export interface PartyVoteShareTrendPoint {
+  year: number;
+  turnout: number;
+  JKNC?: number;
+  JKPDP?: number;
+  BJP?: number;
+  INC?: number;
+  'APNI PARTY'?: number;
+  JKPC?: number;
+  [party: string]: number | undefined;
+}
+
+export interface MarginTrendPoint {
+  year: number;
+  winningMargin: number;
+  winningMarginPercentage: number;
+  winner: string;
+  party: string;
+  turnout: number;
+}
+

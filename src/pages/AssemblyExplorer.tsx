@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   MapPin,
   Vote,
@@ -7,11 +7,7 @@ import {
   Calendar,
   Layers,
 } from 'lucide-react';
-import { ElectionService } from '../services/electionService';
-import type {
-  AssemblyConstituencyMetadata,
-  AssemblyElectionRecord,
-} from '../types/election';
+import { useAssemblyData } from '../hooks/useElectionData';
 import { AssemblySelector } from '../components/filters/AssemblySelector';
 import { AssemblyResultsTable } from '../components/tables/AssemblyResultsTable';
 import { AssemblyComparisonChart } from '../components/charts/AssemblyComparisonChart';
@@ -27,38 +23,13 @@ import {
 } from '../utils/formatters';
 
 export const AssemblyExplorer: React.FC = () => {
-  const [segments, setSegments] = useState<AssemblyConstituencyMetadata[]>([]);
-  const [allResults, setAllResults] = useState<AssemblyElectionRecord[]>([]);
+  const { segments, allResults, availableYears, loading, error } = useAssemblyData();
   const [selectedSegmentId, setSelectedSegmentId] = useState<string>('ALL');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('ALL');
   const [selectedYear, setSelectedYear] = useState<number>(2024);
-  const [availableYears, setAvailableYears] = useState<number[]>([2024, 2014]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setLoading(true);
-        const [metaList, resultsList, years] = await Promise.all([
-          ElectionService.getAssemblyConstituencies(),
-          ElectionService.getAssemblyResults(),
-          ElectionService.getAvailableAssemblyYears(),
-        ]);
-        setSegments(metaList);
-        setAllResults(resultsList);
-        setAvailableYears(years);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load Assembly segments');
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
 
   if (loading) {
-    return <LoadingSpinner message="Loading Assembly Constituency intelligence..." size="lg" />;
+    return <LoadingSpinner message="Loading Assembly segment records..." size="lg" />;
   }
 
   if (error || segments.length === 0) {
@@ -70,7 +41,6 @@ export const AssemblyExplorer: React.FC = () => {
     );
   }
 
-  // Filter records by selected year, district, and segment
   const yearResults = allResults.filter((r) => r.electionYear === selectedYear);
 
   const filteredRecords = yearResults.filter((r) => {
@@ -86,7 +56,6 @@ export const AssemblyExplorer: React.FC = () => {
   const selectedMeta = segments.find((s) => s.id === selectedSegmentId);
   const singleRecord = selectedSegmentId !== 'ALL' ? filteredRecords[0] : null;
 
-  // Aggregate statistics for the filtered view
   const validTurnoutRecords = filteredRecords.filter((r) => r.turnoutPercentage !== null);
   const avgTurnout =
     validTurnoutRecords.length > 0
@@ -104,9 +73,7 @@ export const AssemblyExplorer: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Top Filter Controls Toolbar */}
       <div className="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm flex flex-wrap items-center justify-between gap-4">
-        {/* Assembly & District Selector */}
         <AssemblySelector
           segments={segments}
           selectedSegmentId={selectedSegmentId}
@@ -115,7 +82,6 @@ export const AssemblyExplorer: React.FC = () => {
           onDistrictChange={setSelectedDistrict}
         />
 
-        {/* Year Selector */}
         <div className="flex items-center gap-2">
           <label htmlFor="assembly-year-select" className="text-xs font-semibold text-slate-500 flex items-center gap-1 whitespace-nowrap">
             <Calendar className="w-3.5 h-3.5" />
@@ -134,7 +100,6 @@ export const AssemblyExplorer: React.FC = () => {
             ))}
           </select>
 
-          {/* Reset Filters */}
           {(selectedSegmentId !== 'ALL' || selectedDistrict !== 'ALL') && (
             <button
               onClick={() => {
@@ -149,17 +114,14 @@ export const AssemblyExplorer: React.FC = () => {
         </div>
       </div>
 
-      {/* Freshness / Delimitation Notice */}
       <DataFreshnessNotice
         referenceYear={selectedYear}
         sourceTitle="Election Commission of India Assembly Election Certified Returns"
         delimitationNote="Under Delimitation Order 2022, 18 segments form Srinagar PC. Earlier 2014 assembly seats reflect pre-delimitation boundaries."
       />
 
-      {/* Single Segment Selected View */}
       {selectedSegmentId !== 'ALL' && selectedMeta ? (
         <div className="space-y-6">
-          {/* Segment Details Header */}
           <div className="bg-slate-900 text-white rounded-xl p-6 border border-slate-800 shadow-md">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
@@ -195,8 +157,7 @@ export const AssemblyExplorer: React.FC = () => {
             </div>
           </div>
 
-          {/* Missing data state if constituency did not exist in selected year */}
-          {(!singleRecord || !singleRecord.isDataAvailable) ? (
+          {!singleRecord || !singleRecord.isDataAvailable ? (
             <EmptyState
               title={`No Assembly Election Data for ${selectedMeta.name} in ${selectedYear}`}
               description={
@@ -209,7 +170,6 @@ export const AssemblyExplorer: React.FC = () => {
             />
           ) : (
             <>
-              {/* Single Segment KPI Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <KpiCard
                   title="Elected MLA"
@@ -252,7 +212,6 @@ export const AssemblyExplorer: React.FC = () => {
                 />
               </div>
 
-              {/* Candidates Breakdown Table */}
               <div className="bg-white rounded-xl border border-slate-200/90 shadow-sm p-6">
                 <h2 className="text-sm font-bold text-slate-900 mb-4">
                   Candidate Vote Distribution in {selectedMeta.name} ({singleRecord.electionYear})
@@ -307,9 +266,7 @@ export const AssemblyExplorer: React.FC = () => {
           )}
         </div>
       ) : (
-        /* Multi-Segment Aggregate View */
         <div className="space-y-6">
-          {/* Aggregate KPI Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <KpiCard
               title="Assembly Segments Shown"
@@ -352,13 +309,11 @@ export const AssemblyExplorer: React.FC = () => {
             />
           </div>
 
-          {/* Cross-Segment Comparison Chart */}
           <AssemblyComparisonChart
             records={filteredRecords}
             electionYear={selectedYear}
           />
 
-          {/* Assembly Results Table */}
           <AssemblyResultsTable
             records={filteredRecords}
             electionYear={selectedYear}

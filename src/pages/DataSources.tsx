@@ -1,34 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import {
-  ExternalLink,
-  ShieldCheck,
-  AlertTriangle,
-  Database,
-} from 'lucide-react';
-import { ElectionService } from '../services/electionService';
-import type { DataSourceMetadata } from '../types/election';
+import React from 'react';
+import { ExternalLink, ShieldCheck, AlertTriangle, Database } from 'lucide-react';
+import { useSourcesData } from '../hooks/useElectionData';
 import { LoadingSpinner } from '../components/feedback/LoadingSpinner';
 import { ErrorMessage } from '../components/feedback/ErrorMessage';
 
 export const DataSources: React.FC = () => {
-  const [sources, setSources] = useState<DataSourceMetadata[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setLoading(true);
-        const data = await ElectionService.getDataSources();
-        setSources(data);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load data sources');
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
+  const { sources, loading, error } = useSourcesData();
 
   if (loading) {
     return <LoadingSpinner message="Loading data provenance records..." size="lg" />;
@@ -45,7 +22,6 @@ export const DataSources: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Page Header Banner */}
       <div className="bg-white rounded-xl border border-slate-200/90 p-6 shadow-sm">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">
@@ -61,11 +37,10 @@ export const DataSources: React.FC = () => {
           </div>
         </div>
         <p className="text-sm text-slate-600 leading-relaxed mt-3">
-          This dashboard adheres strictly to the rule of <strong>zero data fabrication</strong>. All parliamentary and assembly election statistics are sourced directly from verified Election Commission of India (ECI) certified reports, Chief Electoral Officer Jammu & Kashmir portals, Delimitation Commission orders, and Census of India publications.
+          This dashboard adheres strictly to official records. All parliamentary and assembly election statistics are sourced directly from verified Election Commission of India (ECI) certified reports, Chief Electoral Officer Jammu & Kashmir portals, Delimitation Commission orders, and Census of India publications.
         </p>
       </div>
 
-      {/* Critical Methodological Caveats Alert */}
       <div className="bg-amber-50 border border-amber-200/90 rounded-xl p-5 text-amber-900 space-y-2">
         <div className="flex items-center gap-2 font-bold text-sm">
           <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0" />
@@ -81,7 +56,6 @@ export const DataSources: React.FC = () => {
         </div>
       </div>
 
-      {/* Sources Grid */}
       <div className="space-y-4">
         <h2 className="text-base font-bold text-slate-900">
           Catalog of Verified Data Sources ({sources.length})
@@ -125,7 +99,6 @@ export const DataSources: React.FC = () => {
                 </a>
               </div>
 
-              {/* Geographic Scope & Fields */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 border-t border-slate-100 text-xs">
                 <div>
                   <span className="font-semibold text-slate-700 block mb-1">
@@ -153,7 +126,6 @@ export const DataSources: React.FC = () => {
                 </div>
               </div>
 
-              {/* Missing Fields and Limitations */}
               <div className="pt-2 text-xs text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-200/80">
                 <span className="font-semibold text-slate-800">Assumptions & Methodological Constraints:</span>
                 <p className="mt-1 leading-relaxed text-slate-600">{src.assumptionsAndLimitations}</p>
@@ -169,7 +141,6 @@ export const DataSources: React.FC = () => {
         </div>
       </div>
 
-      {/* Extensibility & Developer Guide */}
       <div className="bg-white rounded-xl border border-slate-200/90 p-6 shadow-sm space-y-3">
         <div className="flex items-center gap-2">
           <Database className="w-4 h-4 text-brand-600" />

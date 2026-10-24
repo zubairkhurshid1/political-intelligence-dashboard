@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Users,
   Vote,
@@ -10,20 +10,8 @@ import {
   FileText,
   PieChart as PieIcon,
 } from 'lucide-react';
-import {
-  PieChart,
-  Pie,
-  Cell,
-  ResponsiveContainer,
-  Tooltip,
-} from 'recharts';
-import { ElectionService } from '../services/electionService';
-import type {
-  ConstituencyMetadata,
-  ParliamentaryElectionRecord,
-  AssemblyConstituencyMetadata,
-  DemographicIndicator,
-} from '../types/election';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import { useConstituencyOverview } from '../hooks/useElectionData';
 import { KpiCard } from '../components/cards/KpiCard';
 import { LoadingSpinner } from '../components/feedback/LoadingSpinner';
 import { ErrorMessage } from '../components/feedback/ErrorMessage';
@@ -31,38 +19,11 @@ import { DataFreshnessNotice } from '../components/feedback/DataFreshnessNotice'
 import { formatIndianNumber, formatPercentage } from '../utils/formatters';
 
 export const Overview: React.FC = () => {
-  const [constituency, setConstituency] = useState<ConstituencyMetadata | null>(null);
-  const [latestElection, setLatestElection] = useState<ParliamentaryElectionRecord | null>(null);
-  const [segments, setSegments] = useState<AssemblyConstituencyMetadata[]>([]);
-  const [demographics, setDemographics] = useState<DemographicIndicator[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setLoading(true);
-        const [meta, elections, segs, demos] = await Promise.all([
-          ElectionService.getConstituencyMetadata(),
-          ElectionService.getParliamentaryElections(),
-          ElectionService.getAssemblyConstituencies(),
-          ElectionService.getDemographics(),
-        ]);
-        setConstituency(meta);
-        setLatestElection(elections[0] || null);
-        setSegments(segs);
-        setDemographics(demos);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load constituency overview data');
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
+  const { constituency, latestElection, segments, demographics, loading, error } =
+    useConstituencyOverview();
 
   if (loading) {
-    return <LoadingSpinner message="Loading Srinagar Constituency Intelligence..." size="lg" />;
+    return <LoadingSpinner message="Loading constituency profile..." size="lg" />;
   }
 
   if (error || !constituency) {
@@ -74,14 +35,12 @@ export const Overview: React.FC = () => {
     );
   }
 
-  // Gender Electorate breakdown data for chart
   const genderData = [
     { name: 'Male Electors', value: 875938, color: '#0284c7' },
     { name: 'Female Electors', value: 871808, color: '#ec4899' },
     { name: 'Third Gender Electors', value: 64, color: '#8b5cf6' },
   ];
 
-  // District segments count
   const districtCounts = segments.reduce<Record<string, number>>((acc, s) => {
     acc[s.district] = (acc[s.district] || 0) + 1;
     return acc;
@@ -89,7 +48,6 @@ export const Overview: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Constituency Hero Banner */}
       <div className="bg-gradient-to-r from-slate-900 via-slate-850 to-brand-950 rounded-2xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden border border-slate-800">
         <div className="relative z-10 max-w-3xl">
           <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -129,14 +87,12 @@ export const Overview: React.FC = () => {
         </div>
       </div>
 
-      {/* Freshness / Provenance Note */}
       <DataFreshnessNotice
         referenceYear="2024 (Electoral) / 2011 (Demographics)"
         sourceTitle="Election Commission of India (Form 20 / Results Portal) & Census of India 2011"
         delimitationNote="Demographic figures from Census 2011 reflect pre-delimitation district boundaries as Census 2021 was officially postponed."
       />
 
-      {/* Primary KPI Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard
           title="Registered Electors"
@@ -156,7 +112,7 @@ export const Overview: React.FC = () => {
           icon={Vote}
           trend={{
             value: 24.06,
-            label: "vs 2019 (14.43%)",
+            label: 'vs 2019 (14.43%)',
           }}
           subValue={`${formatIndianNumber(latestElection?.votesPolled)} total votes polled`}
           accentColor="emerald"
@@ -184,9 +140,7 @@ export const Overview: React.FC = () => {
         />
       </div>
 
-      {/* Geographic Coverage & Delimitation Restructuring */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Delimitation Context Panel */}
         <div className="lg:col-span-2 bg-white rounded-xl border border-slate-200/90 p-6 shadow-sm">
           <div className="flex items-center gap-2.5 mb-4">
             <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
@@ -206,7 +160,6 @@ export const Overview: React.FC = () => {
             {constituency.delimitationSummary}
           </p>
 
-          {/* Assembly Segments by District Badge Pills */}
           <div className="space-y-3 pt-3 border-t border-slate-100">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
               Assembly Segments Distribution Across Districts
@@ -235,7 +188,6 @@ export const Overview: React.FC = () => {
           </div>
         </div>
 
-        {/* Electorate Gender Profile Donut Chart */}
         <div className="bg-white rounded-xl border border-slate-200/90 p-6 shadow-sm flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-3">
@@ -316,7 +268,6 @@ export const Overview: React.FC = () => {
         </div>
       </div>
 
-      {/* Demographic Indicators Section */}
       <div className="bg-white rounded-xl border border-slate-200/90 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
           <div>

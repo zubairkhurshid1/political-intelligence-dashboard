@@ -19,6 +19,56 @@ interface AssemblyComparisonChartProps {
 
 type MetricType = 'turnout' | 'margin' | 'winnerShare';
 
+interface SegmentChartPoint {
+  assemblyId: string;
+  name: string;
+  fullName: string;
+  number: number;
+  district: string;
+  winner: string;
+  party: string;
+  turnout: number;
+  margin: number;
+  marginPct: number;
+  winnerShare: number;
+  displayValue: number;
+}
+
+interface CustomTooltipProps {
+  active?: boolean;
+  payload?: Array<{
+    payload: SegmentChartPoint;
+  }>;
+}
+
+const SegmentTooltip: React.FC<CustomTooltipProps> = ({ active, payload }) => {
+  if (active && payload && payload.length) {
+    const item = payload[0].payload;
+    return (
+      <div className="custom-recharts-tooltip">
+        <p className="font-bold text-slate-100 border-b border-slate-700 pb-1 mb-1.5">
+          {item.fullName} (AC-{item.number}) — {item.district}
+        </p>
+        <div className="space-y-1 text-xs">
+          <p className="text-slate-300">
+            Winner: <span className="text-white font-semibold">{item.winner}</span> ({item.party})
+          </p>
+          <p className="text-slate-300">
+            Turnout: <span className="font-mono text-brand-300 font-bold">{formatPercentage(item.turnout)}</span>
+          </p>
+          <p className="text-slate-300">
+            Winning Margin: <span className="font-mono text-white font-bold">{formatIndianNumber(item.margin)} ({formatPercentage(item.marginPct)})</span>
+          </p>
+          <p className="text-slate-300">
+            Winner Vote Share: <span className="font-mono text-emerald-300 font-bold">{formatPercentage(item.winnerShare)}</span>
+          </p>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+
 export const AssemblyComparisonChart: React.FC<AssemblyComparisonChartProps> = ({
   records,
   electionYear,
@@ -28,7 +78,7 @@ export const AssemblyComparisonChart: React.FC<AssemblyComparisonChartProps> = (
   // Filter records with valid data
   const validRecords = records.filter((r) => r.isDataAvailable && r.winner !== null);
 
-  const chartData = validRecords.map((r) => {
+  const chartData: SegmentChartPoint[] = validRecords.map((r) => {
     let value = 0;
     if (metric === 'turnout') {
       value = r.turnoutPercentage || 0;
@@ -125,35 +175,7 @@ export const AssemblyComparisonChart: React.FC<AssemblyComparisonChartProps> = (
               tick={{ fill: '#64748b', fontSize: 11 }}
               axisLine={{ stroke: '#cbd5e1' }}
             />
-            <Tooltip
-              content={({ active, payload }) => {
-                if (active && payload && payload.length) {
-                  const item = (payload[0] as { payload: (typeof sortedData)[0] }).payload;
-                  return (
-                    <div className="custom-recharts-tooltip">
-                      <p className="font-bold text-slate-100 border-b border-slate-700 pb-1 mb-1.5">
-                        {item.fullName} (AC-{item.number}) — {item.district}
-                      </p>
-                      <div className="space-y-1 text-xs">
-                        <p className="text-slate-300">
-                          Winner: <span className="text-white font-semibold">{item.winner}</span> ({item.party})
-                        </p>
-                        <p className="text-slate-300">
-                          Turnout: <span className="font-mono text-brand-300 font-bold">{formatPercentage(item.turnout)}</span>
-                        </p>
-                        <p className="text-slate-300">
-                          Winning Margin: <span className="font-mono text-white font-bold">{formatIndianNumber(item.margin)} ({formatPercentage(item.marginPct)})</span>
-                        </p>
-                        <p className="text-slate-300">
-                          Winner Vote Share: <span className="font-mono text-emerald-300 font-bold">{formatPercentage(item.winnerShare)}</span>
-                        </p>
-                      </div>
-                    </div>
-                  );
-                }
-                return null;
-              }}
-            />
+            <Tooltip content={<SegmentTooltip />} />
             <Bar dataKey="displayValue" radius={[4, 4, 0, 0]} maxBarSize={28}>
               {sortedData.map((entry) => (
                 <Cell key={entry.assemblyId} fill={getPartyColor(entry.party)} />

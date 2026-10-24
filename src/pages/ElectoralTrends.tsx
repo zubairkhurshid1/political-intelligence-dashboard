@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   TrendingUp,
   Activity,
@@ -6,8 +6,6 @@ import {
   ShieldCheck,
   Award,
 } from 'lucide-react';
-import { ElectionService } from '../services/electionService';
-import type { ParliamentaryElectionRecord } from '../types/election';
 import { TurnoutTrendChart } from '../components/charts/TurnoutTrendChart';
 import { PartyVoteShareLineChart } from '../components/charts/PartyVoteShareLineChart';
 import { WinningMarginChart } from '../components/charts/WinningMarginChart';
@@ -22,33 +20,10 @@ import {
   getPartyBadgeClasses,
 } from '../utils/formatters';
 
-export const ElectoralTrends: React.FC = () => {
-  const [elections, setElections] = useState<ParliamentaryElectionRecord[]>([]);
-  const [partyTrends, setPartyTrends] = useState<any[]>([]);
-  const [marginTrends, setMarginTrends] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+import { useParliamentaryData } from '../hooks/useElectionData';
 
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setLoading(true);
-        const [elecs, pTrends, mTrends] = await Promise.all([
-          ElectionService.getParliamentaryElections(),
-          ElectionService.getPartyVoteShareTrends(),
-          ElectionService.getWinningMarginTrends(),
-        ]);
-        setElections(elecs);
-        setPartyTrends(pTrends);
-        setMarginTrends(mTrends);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load electoral trends');
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
+export const ElectoralTrends: React.FC = () => {
+  const { elections, partyTrends, marginTrends, loading, error } = useParliamentaryData();
 
   if (loading) {
     return <LoadingSpinner message="Calculating electoral metrics and trends..." size="lg" />;
@@ -121,7 +96,6 @@ export const ElectoralTrends: React.FC = () => {
         <WinningMarginChart data={marginTrends} />
       </div>
 
-      {/* Multi-Party Vote Share Line Chart */}
       <PartyVoteShareLineChart data={partyTrends} />
 
       {/* Historical Leadership Transitions Table */}

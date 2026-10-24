@@ -1,10 +1,5 @@
-/**
- * Raw Data Loader Service
- * 
- * Simulates an asynchronous data fetch layer for local verified JSON datasets.
- * In a production architecture with a remote API, this module would execute HTTP requests.
- */
-
+// Simulated client for local verified JSON datasets
+// Emulates network latency so async UI states (skeletons, spinners) can be verified
 import constituencyMetadataRaw from '../data/constituencyMetadata.json';
 import parliamentaryElectionsRaw from '../data/parliamentaryElections.json';
 import assemblyDataRaw from '../data/assemblyConstituencies.json';
@@ -20,35 +15,23 @@ import type {
   DataSourceMetadata,
 } from '../types/election';
 
-// Simulated network latency (fast for test/dev, but validates async loading states)
-const SIMULATED_LATENCY_MS = 60;
+const delay = <T>(data: T, ms = 40): Promise<T> =>
+  new Promise((res) => setTimeout(() => res(data), ms));
 
-function simulateDelay<T>(data: T, delay: number = SIMULATED_LATENCY_MS): Promise<T> {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(data), delay);
-  });
-}
+export const fetchConstituencyMetadata = (): Promise<ConstituencyMetadata> =>
+  delay(constituencyMetadataRaw as ConstituencyMetadata);
 
-export async function fetchConstituencyMetadata(): Promise<ConstituencyMetadata> {
-  return simulateDelay(constituencyMetadataRaw as ConstituencyMetadata);
-}
+export const fetchParliamentaryElections = (): Promise<ParliamentaryElectionRecord[]> =>
+  delay(parliamentaryElectionsRaw as ParliamentaryElectionRecord[]);
 
-export async function fetchParliamentaryElections(): Promise<ParliamentaryElectionRecord[]> {
-  return simulateDelay(parliamentaryElectionsRaw as ParliamentaryElectionRecord[]);
-}
+export const fetchAssemblyMetadata = (): Promise<AssemblyConstituencyMetadata[]> =>
+  delay(assemblyDataRaw.segments as AssemblyConstituencyMetadata[]);
 
-export async function fetchAssemblyMetadata(): Promise<AssemblyConstituencyMetadata[]> {
-  return simulateDelay(assemblyDataRaw.segments as AssemblyConstituencyMetadata[]);
-}
+export const fetchAssemblyResults = (): Promise<AssemblyElectionRecord[]> =>
+  delay(assemblyDataRaw.assemblyResults as AssemblyElectionRecord[]);
 
-export async function fetchAssemblyResults(): Promise<AssemblyElectionRecord[]> {
-  return simulateDelay(assemblyDataRaw.assemblyResults as AssemblyElectionRecord[]);
-}
+export const fetchDemographics = (): Promise<DemographicIndicator[]> =>
+  delay(demographicsRaw as DemographicIndicator[]);
 
-export async function fetchDemographics(): Promise<DemographicIndicator[]> {
-  return simulateDelay(demographicsRaw as DemographicIndicator[]);
-}
-
-export async function fetchDataSources(): Promise<DataSourceMetadata[]> {
-  return simulateDelay(dataSourcesRaw as DataSourceMetadata[]);
-}
+export const fetchDataSources = (): Promise<DataSourceMetadata[]> =>
+  delay(dataSourcesRaw as DataSourceMetadata[]);

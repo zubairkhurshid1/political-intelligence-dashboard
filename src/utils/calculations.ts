@@ -1,193 +1,73 @@
-/**
- * Electoral Calculation Utilities
- * 
- * Implements standard election analytics formulas adhering strictly to
- * Election Commission of India (ECI) guidelines and edge-case handling.
- */
+// Electoral calculations following standard Election Commission of India formulas
+
+const isValidNumber = (val: unknown): val is number =>
+  typeof val === 'number' && !Number.isNaN(val);
+
+const round2 = (num: number): number => Number(num.toFixed(2));
 
 /**
- * Calculates candidate vote share percentage.
- * Formula: (candidateVotes / totalValidVotes) * 100
- * 
- * @param candidateVotes Total valid votes received by the candidate
- * @param totalValidVotes Total valid votes cast in the constituency
- * @returns Vote share rounded to 2 decimal places, or null if invalid/unavailable
+ * Calculates candidate vote share percentage: (votes / totalValidVotes) * 100
  */
 export function calculateVoteShare(
   candidateVotes: number | null | undefined,
   totalValidVotes: number | null | undefined
 ): number | null {
-  if (
-    candidateVotes === null ||
-    candidateVotes === undefined ||
-    totalValidVotes === null ||
-    totalValidVotes === undefined
-  ) {
-    return null;
-  }
+  if (!isValidNumber(candidateVotes) || !isValidNumber(totalValidVotes)) return null;
+  if (totalValidVotes <= 0 || candidateVotes < 0) return null;
 
-  if (typeof candidateVotes !== 'number' || typeof totalValidVotes !== 'number') {
-    return null;
-  }
-
-  if (isNaN(candidateVotes) || isNaN(totalValidVotes)) {
-    return null;
-  }
-
-  if (totalValidVotes <= 0 || candidateVotes < 0) {
-    return null;
-  }
-
-  const share = (candidateVotes / totalValidVotes) * 100;
-  return Number(share.toFixed(2));
+  return round2((candidateVotes / totalValidVotes) * 100);
 }
 
 /**
- * Calculates winning margin in votes.
- * Formula: winnerVotes - runnerUpVotes
- * 
- * @param winnerVotes Votes secured by the 1st position candidate
- * @param runnerUpVotes Votes secured by the 2nd position candidate
- * @returns Absolute vote difference or null if either input is invalid/unavailable
+ * Calculates winning margin in raw votes: winner - runnerUp
  */
 export function calculateWinningMargin(
   winnerVotes: number | null | undefined,
   runnerUpVotes: number | null | undefined
 ): number | null {
-  if (
-    winnerVotes === null ||
-    winnerVotes === undefined ||
-    runnerUpVotes === null ||
-    runnerUpVotes === undefined
-  ) {
-    return null;
-  }
-
-  if (typeof winnerVotes !== 'number' || typeof runnerUpVotes !== 'number') {
-    return null;
-  }
-
-  if (isNaN(winnerVotes) || isNaN(runnerUpVotes)) {
-    return null;
-  }
-
-  if (winnerVotes < 0 || runnerUpVotes < 0) {
-    return null;
-  }
+  if (!isValidNumber(winnerVotes) || !isValidNumber(runnerUpVotes)) return null;
+  if (winnerVotes < 0 || runnerUpVotes < 0) return null;
 
   return winnerVotes - runnerUpVotes;
 }
 
 /**
- * Calculates winning margin as a percentage of total valid votes.
- * Formula: (winningMargin / totalValidVotes) * 100
- * 
- * @param winningMargin Absolute vote difference between winner and runner-up
- * @param totalValidVotes Total valid votes cast
- * @returns Margin percentage rounded to 2 decimal places, or null if invalid
+ * Calculates winning margin as a percentage of total valid votes
  */
 export function calculateWinningMarginPercentage(
   winningMargin: number | null | undefined,
   totalValidVotes: number | null | undefined
 ): number | null {
-  if (
-    winningMargin === null ||
-    winningMargin === undefined ||
-    totalValidVotes === null ||
-    totalValidVotes === undefined
-  ) {
-    return null;
-  }
+  if (!isValidNumber(winningMargin) || !isValidNumber(totalValidVotes)) return null;
+  if (totalValidVotes <= 0) return null;
 
-  if (typeof winningMargin !== 'number' || typeof totalValidVotes !== 'number') {
-    return null;
-  }
-
-  if (isNaN(winningMargin) || isNaN(totalValidVotes)) {
-    return null;
-  }
-
-  if (totalValidVotes <= 0) {
-    return null;
-  }
-
-  const percentage = (winningMargin / totalValidVotes) * 100;
-  return Number(percentage.toFixed(2));
+  return round2((winningMargin / totalValidVotes) * 100);
 }
 
 /**
- * Calculates voter turnout percentage.
- * Formula: (totalVotesPolled / registeredElectors) * 100
- * 
- * @param votesPolled Total votes polled (or valid votes if certified polled count is identical)
- * @param registeredElectors Total registered voters on the electoral roll
- * @returns Turnout percentage rounded to 2 decimal places, or null if invalid
+ * Calculates voter turnout percentage: (polled / electors) * 100
  */
 export function calculateVoterTurnout(
   votesPolled: number | null | undefined,
   registeredElectors: number | null | undefined
 ): number | null {
-  if (
-    votesPolled === null ||
-    votesPolled === undefined ||
-    registeredElectors === null ||
-    registeredElectors === undefined
-  ) {
-    return null;
-  }
+  if (!isValidNumber(votesPolled) || !isValidNumber(registeredElectors)) return null;
+  if (registeredElectors <= 0 || votesPolled < 0) return null;
 
-  if (typeof votesPolled !== 'number' || typeof registeredElectors !== 'number') {
-    return null;
-  }
-
-  if (isNaN(votesPolled) || isNaN(registeredElectors)) {
-    return null;
-  }
-
-  if (registeredElectors <= 0 || votesPolled < 0) {
-    return null;
-  }
-
-  const turnout = (votesPolled / registeredElectors) * 100;
-  return Number(turnout.toFixed(2));
+  return round2((votesPolled / registeredElectors) * 100);
 }
 
 /**
- * Calculates party vote share change between two comparable election cycles.
- * Formula: currentShare - previousShare
- * 
- * @param currentShare Current election vote share percentage
- * @param previousShare Previous election vote share percentage
- * @returns Vote share swing percentage rounded to 2 decimal places, or null if not comparable
+ * Calculates percentage swing between two cycles for a party
  */
 export function calculateVoteShareChange(
   currentShare: number | null | undefined,
   previousShare: number | null | undefined
 ): number | null {
-  if (
-    currentShare === null ||
-    currentShare === undefined ||
-    previousShare === null ||
-    previousShare === undefined
-  ) {
-    return null;
-  }
-
-  if (typeof currentShare !== 'number' || typeof previousShare !== 'number') {
-    return null;
-  }
-
-  if (isNaN(currentShare) || isNaN(previousShare)) {
-    return null;
-  }
-
-  const diff = currentShare - previousShare;
-  return Number(diff.toFixed(2));
+  if (!isValidNumber(currentShare) || !isValidNumber(previousShare)) return null;
+  return round2(currentShare - previousShare);
 }
 
-/**
- * Determines outcome retention or political change between two election years.
- */
 export interface OutcomeComparison {
   yearA: number;
   yearB: number;
@@ -204,14 +84,15 @@ export function compareElectionOutcomes(
   recordA: { electionYear: number; winner: { candidateName: string; partyName: string; partyAbbreviation: string } } | null | undefined,
   recordB: { electionYear: number; winner: { candidateName: string; partyName: string; partyAbbreviation: string } } | null | undefined
 ): OutcomeComparison | null {
-  if (!recordA || !recordB || !recordA.winner || !recordB.winner) {
-    return null;
-  }
+  if (!recordA?.winner || !recordB?.winner) return null;
 
   const isSameParty =
-    recordA.winner.partyAbbreviation.toUpperCase() === recordB.winner.partyAbbreviation.toUpperCase();
+    recordA.winner.partyAbbreviation.trim().toUpperCase() ===
+    recordB.winner.partyAbbreviation.trim().toUpperCase();
+
   const isSameCandidate =
-    recordA.winner.candidateName.toLowerCase().trim() === recordB.winner.candidateName.toLowerCase().trim();
+    recordA.winner.candidateName.trim().toLowerCase() ===
+    recordB.winner.candidateName.trim().toLowerCase();
 
   let description = '';
   if (isSameCandidate) {

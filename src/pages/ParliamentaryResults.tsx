@@ -1,13 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import {
-  Vote,
-  Users,
-  Award,
-  Scale,
-  GitCompare,
-} from 'lucide-react';
-import { ElectionService } from '../services/electionService';
-import type { ParliamentaryElectionRecord } from '../types/election';
+import React, { useState } from 'react';
+import { Vote, Users, Award, Scale, GitCompare } from 'lucide-react';
+import { useParliamentaryData } from '../hooks/useElectionData';
 import { KpiCard } from '../components/cards/KpiCard';
 import { ElectionYearFilter } from '../components/filters/ElectionYearFilter';
 import { YearComparisonFilter } from '../components/filters/YearComparisonFilter';
@@ -18,48 +11,17 @@ import { ResultsTable } from '../components/tables/ResultsTable';
 import { LoadingSpinner } from '../components/feedback/LoadingSpinner';
 import { ErrorMessage } from '../components/feedback/ErrorMessage';
 import { DataFreshnessNotice } from '../components/feedback/DataFreshnessNotice';
-import {
-  formatIndianNumber,
-  formatPercentage,
-} from '../utils/formatters';
+import { formatIndianNumber, formatPercentage } from '../utils/formatters';
 import { compareElectionOutcomes } from '../utils/calculations';
 
 export const ParliamentaryResults: React.FC = () => {
-  const [elections, setElections] = useState<ParliamentaryElectionRecord[]>([]);
+  const { elections, partyTrends, marginTrends, loading, error } = useParliamentaryData();
   const [selectedYear, setSelectedYear] = useState<number>(2024);
   const [isComparing, setIsComparing] = useState<boolean>(false);
   const [compareYear, setCompareYear] = useState<number>(2019);
-  const [partyTrends, setPartyTrends] = useState<Array<any>>([]);
-  const [marginTrends, setMarginTrends] = useState<Array<any>>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        setLoading(true);
-        const [allElections, pTrends, mTrends] = await Promise.all([
-          ElectionService.getParliamentaryElections(),
-          ElectionService.getPartyVoteShareTrends(),
-          ElectionService.getWinningMarginTrends(),
-        ]);
-        setElections(allElections);
-        setPartyTrends(pTrends);
-        setMarginTrends(mTrends);
-        if (allElections.length > 0) {
-          setSelectedYear(allElections[0].electionYear);
-        }
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load parliamentary elections');
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
 
   if (loading) {
-    return <LoadingSpinner message="Loading parliamentary election records..." size="lg" />;
+    return <LoadingSpinner message="Loading parliamentary records..." size="lg" />;
   }
 
   if (error || elections.length === 0) {
@@ -72,10 +34,9 @@ export const ParliamentaryResults: React.FC = () => {
   }
 
   const availableYears = elections.map((e) => e.electionYear);
-  const currentRecord = elections.find((e) => e.electionYear === selectedYear) || elections[0];
-  const compareRecord = elections.find((e) => e.electionYear === compareYear) || elections[1];
+  const currentRecord = elections.find((e) => e.electionYear === selectedYear) ?? elections[0];
+  const compareRecord = elections.find((e) => e.electionYear === compareYear) ?? elections[1];
 
-  // Outcome comparison calculations
   const outcomeShift = isComparing ? compareElectionOutcomes(compareRecord, currentRecord) : null;
   const turnoutDifference = isComparing
     ? currentRecord.turnoutPercentage - compareRecord.turnoutPercentage
@@ -83,7 +44,6 @@ export const ParliamentaryResults: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Top Filter Toolbar */}
       <div className="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm flex flex-wrap items-center justify-between gap-4">
         <ElectionYearFilter
           years={availableYears}
@@ -103,14 +63,12 @@ export const ParliamentaryResults: React.FC = () => {
         />
       </div>
 
-      {/* Delimitation / Freshness Notice for Selected Year */}
       <DataFreshnessNotice
         referenceYear={currentRecord.electionYear}
         sourceTitle="Election Commission of India Certified Statistical Declaration"
         delimitationNote={currentRecord.notes}
       />
 
-      {/* Comparison Overview Banner if Active */}
       {isComparing && (
         <div className="bg-slate-900 text-white rounded-xl p-5 border border-slate-800 shadow-md">
           <div className="flex items-center gap-2 text-brand-400 text-xs font-bold uppercase tracking-wider mb-2">
@@ -150,7 +108,6 @@ export const ParliamentaryResults: React.FC = () => {
         </div>
       )}
 
-      {/* KPI Cards for Selected Election Year */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard
           title="Winning Candidate"
@@ -193,22 +150,17 @@ export const ParliamentaryResults: React.FC = () => {
         />
       </div>
 
-      {/* Election Visualizations Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Candidate Vote Bar Chart for Selected Year */}
         <CandidateVoteBarChart
           candidates={currentRecord.candidates}
           electionYear={currentRecord.electionYear}
         />
 
-        {/* Historical Party Vote Share Line Chart */}
         <PartyVoteShareLineChart data={partyTrends} />
       </div>
 
-      {/* Winning Margin Trajectory Chart */}
       <WinningMarginChart data={marginTrends} />
 
-      {/* Candidate-wise Detailed Table */}
       <ResultsTable
         candidates={currentRecord.candidates}
         totalValidVotes={currentRecord.validVotes}
