@@ -120,6 +120,24 @@ All electoral metrics are dynamically derived by pure functions in [`src/utils/c
 | **Provisional Poll-Day Turnout**| **38.49%** | ~6,72,836 EVM votes / 17,47,810 electors | CEO J&K Poll-Night Press Note (13 May 2024) | **Provisional Note** |
 | **Booth-Level Demographics** | *Not Published* | Form 20 records votes, not voter caste/religion | ECI Statutory Policy | **Not Verified** |
 
+### 2019 Lok Sabha Statutory Verification Table (2-Srinagar PC, Pre-2022 Boundaries)
+
+| Metric / Parameter | Certified Statutory Figure | Explicit Denominator Used | Primary Official Citation | Audit Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Constituency Name & Number** | `2-Srinagar` (Pre-2022) | 15 Segments (Srinagar, Budgam, Ganderbal) | ECI Statistical Report 2019, Vol. I | **Verified** |
+| **Elected Member of Parliament** | **Dr. Farooq Abdullah** | JKNC (Jammu & Kashmir National Conference) | ECI Table 11: Detailed Results (Page 382) | **Verified** |
+| **Winning Votes** | **1,06,750 votes** | Candidate Votes (EVM + Postal) | ECI Table 11, Row 1 | **Verified** |
+| **Winner's Vote Share** | **57.14%** (57.13% on polled) | $1,06,750 / 1,86,832$ valid votes $\times 100$ | ECI Statistical Report 2019 | **Verified** |
+| **Runner-Up Candidate** | **Aga Syed Mohsin** | JKPDP (Peoples Democratic Party) | ECI Table 11, Row 2 | **Verified** |
+| **Runner-Up's Votes & Share** | **36,700 votes (19.64%)** | $36,700 / 1,86,832$ valid votes $\times 100$ | ECI Table 11, Row 2 | **Verified** |
+| **Winning Margin (Votes)** | **70,050 votes** | $1,06,750 - 36,700$ | ECI Official Candidate Totals | **Verified** |
+| **Winning Margin Percentage** | **37.49%** (Valid Votes) | $70,050 / 1,86,832 \times 100$ (5.41% on Electorate) | ECI Official Results Table | **Verified** |
+| **Total Valid Votes** | **1,86,832 votes** | Sum of 12 Candidates ($185,266$) + NOTA ($1,566$) | ECI Table 11 Total | **Corrected & Verified** |
+| **Rejected Postal Votes** | **31 votes** | Votes Polled ($186,863$) − Valid Votes ($186,832$) | ECI Reconciliation Tables | **Reconciled** |
+| **Total Votes Polled** | **186,863 votes** | $1,86,832$ Valid + $31$ Rejected Postal | ECI Table 12: Turnout and Electors Summary | **Verified** |
+| **Registered Electors** | **12,95,309 total** | 12,94,671 General + 638 Service Electors | ECI Table 12 Turnout Summary | **Verified** |
+| **Published & Calculated Turnout**| **14.43%** | $186,863 / 1,295,309 \times 100 = 14.426\% \approx 14.43\%$ | ECI Official Turnout Percentage | **Verified (Exact Match)** |
+
 ### Complete Provenance Catalog
 
 | Source ID | Document Title | Issuing Authority | Reference Year | Page / Table Citation & Official Link |
@@ -273,6 +291,6 @@ The dashboard architecture was designed for easy extensibility:
 ## 9. Verification & Submission Readiness
 
 - **TypeScript Compilation**: Passed with 0 errors (`npx tsc -b`).
-- **Unit & Component Tests**: 37/37 tests passing in Vitest (`npm test`).
+- **Unit & Component Tests**: 46/46 tests passing in Vitest (`npm test`).
 - **Production Build**: Built with 0 errors (`npm run build`).
 - **Browser & Viewport Support**: Tested and verified across desktop (1440px, 1280px), tablet (1024px, 768px), and mobile (375px) viewports with responsive navigation drawers and horizontally scrollable tables.

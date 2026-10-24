@@ -55,24 +55,27 @@
     "title": "Statistical Report on General Elections, 2019 to the 17th Lok Sabha",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/statistical-reports/",
-    "archivedUrl": "https://eci.gov.in/statistical-reports/",
-    "relevantTableOrPage": "Table 11: Candidate-wise Votes Polled & Electors (2-Srinagar PC, Page 382)",
+    "archivedUrl": "https://eci.gov.in/files/file/13712-statistical-report-on-general-elections-2019-to-the-17th-lok-sabha/",
+    "relevantTableOrPage": "Table 11: Candidate-wise Votes Polled & Electors (2-Srinagar PC, Page 382); Table 12: Turnout and Electors Summary",
     "electionOrReferenceYear": "2019",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
-      "Candidate Votes",
+      "Candidate Votes (12 Candidates + NOTA)",
       "Party Affiliations",
-      "Valid Votes (1,86,863)",
+      "Total Valid Votes (1,86,832)",
+      "Rejected Postal Votes (31)",
+      "Total Votes Polled (1,86,863)",
       "NOTA Votes (1,566)",
-      "Registered Electors (12,95,309)",
-      "Turnout (14.43%)",
-      "Winning Margin (70,050)"
+      "General Electors (12,94,671)",
+      "Total Electors (12,95,309)",
+      "Voter Turnout (14.43%)",
+      "Winning Margin (70,050 votes; 37.49%)"
     ],
     "fieldsUnavailable": [
       "Post-delimitation geographical overlap data"
     ],
-    "assumptionsAndLimitations": "Elections took place prior to the 2022 Delimitation Commission order; constituency then comprised 15 assembly segments in Srinagar, Budgam, and Ganderbal districts.",
+    "assumptionsAndLimitations": "Election was held under pre-2022 boundaries (15 assembly segments across Srinagar, Budgam, and Ganderbal districts). Official ECI statistical tables certify 1,86,832 total valid votes across all 12 contesting candidates (1,85,266) and NOTA (1,566). Total votes polled of 1,86,863 reflects 1,86,832 valid votes plus 31 rejected postal ballots. Dr. Farooq Abdullah secured 1,06,750 votes (57.14% of valid votes; 57.13% of total votes polled); Aga Syed Mohsin secured 36,700 votes (19.64%). Winning margin was 70,050 votes (37.49% of valid votes; 5.41% of registered electorate). Turnout of 14.43% corresponds to 1,86,863 polled out of 1,295,309 total electors (or 1,86,832 out of 1,294,671 general electors).",
     "reliabilityTier": "Official Statutory Source"
   },
   {

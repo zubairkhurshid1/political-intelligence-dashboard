@@ -28,6 +28,26 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
       expect(notaShare).toBe(0.89);
     });
 
+    it('calculates 2019 winner vote share on valid votes (57.14%)', () => {
+      // 2019 Srinagar: Farooq Abdullah 106,750 out of 186,832 valid votes = 57.14%
+      expect(calculateVoteShare(106750, 186832)).toBe(57.14);
+    });
+
+    it('calculates 2019 winner vote share on polled votes (57.13% matches ECI Table 11)', () => {
+      // 106,750 out of 186,863 polled votes = 57.13%
+      expect(calculateVoteShare(106750, 186863)).toBe(57.13);
+    });
+
+    it('calculates 2019 runner-up vote share (19.64%)', () => {
+      // 2019 Srinagar: Aga Syed Mohsin 36,700 out of 186,832 valid votes = 19.64%
+      expect(calculateVoteShare(36700, 186832)).toBe(19.64);
+    });
+
+    it('calculates 2019 NOTA vote share (0.84%)', () => {
+      // 2019 Srinagar: 1,566 out of 186,832 valid votes = 0.84%
+      expect(calculateVoteShare(1566, 186832)).toBe(0.84);
+    });
+
     it('demonstrates discrepancy if using unverified provisional EVM denominator (672,836)', () => {
       // 356,866 / 672,836 = 53.04% (the discredited third-party figure)
       const erroneousShare = calculateVoteShare(356866, 672836);
@@ -74,6 +94,11 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
       expect(calculateWinningMargin(356866, 168450)).toBe(188416);
     });
 
+    it('calculates 2019 winning margin between Farooq Abdullah and Aga Syed Mohsin', () => {
+      // 2019: 106750 - 36700 = 70050
+      expect(calculateWinningMargin(106750, 36700)).toBe(70050);
+    });
+
     it('returns null if either candidate votes is null or undefined', () => {
       expect(calculateWinningMargin(null, 1000)).toBeNull();
       expect(calculateWinningMargin(1000, null)).toBeNull();
@@ -106,6 +131,16 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
       expect(calculateWinningMarginPercentage(188416, 1747810)).toBe(10.78);
     });
 
+    it('calculates 2019 winning margin percentage on valid votes (37.49%)', () => {
+      // 70,050 / 186,832 = 37.49%
+      expect(calculateWinningMarginPercentage(70050, 186832)).toBe(37.49);
+    });
+
+    it('calculates 2019 winning margin percentage on total registered electors (5.41%)', () => {
+      // 70,050 / 1,295,309 = 5.41%
+      expect(calculateWinningMarginPercentage(70050, 1295309)).toBe(5.41);
+    });
+
     it('returns null when totalValidVotes is zero', () => {
       expect(calculateWinningMarginPercentage(100, 0)).toBeNull();
     });
@@ -121,6 +156,18 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
       // 675,242 certified polled / 1,747,810 registered = 38.6336... -> 38.63%
       const turnout = calculateVoterTurnout(675242, 1747810);
       expect(turnout).toBe(38.63);
+    });
+
+    it('calculates 2019 turnout percentage from polled votes and total registered electors (14.43%)', () => {
+      // 186,863 / 1,295,309 = 14.426% -> 14.43%
+      const turnout = calculateVoterTurnout(186863, 1295309);
+      expect(turnout).toBe(14.43);
+    });
+
+    it('calculates 2019 turnout percentage from valid votes and general electors (14.43%)', () => {
+      // 186,832 / 1,294,671 = 14.4308% -> 14.43%
+      const turnout = calculateVoterTurnout(186832, 1294671);
+      expect(turnout).toBe(14.43);
     });
 
     it('handles poll-day provisional turnout estimate calculation accurately', () => {

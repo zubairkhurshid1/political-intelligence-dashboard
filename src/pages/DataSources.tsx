@@ -168,6 +168,132 @@ export const DataSources: React.FC = () => {
         </div>
       </div>
 
+      {/* 2019 ECI Statutory Data Verification Matrix */}
+      <div className="bg-white rounded-xl border border-slate-200/90 shadow-sm overflow-hidden">
+        <div className="p-4 bg-blue-50/70 border-b border-blue-100 flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-blue-700" />
+            <div>
+              <h2 className="text-sm font-bold text-blue-950">
+                2019 Lok Sabha Statutory Audit & Verification Matrix
+              </h2>
+              <p className="text-xs text-blue-800">
+                Audited against official ECI Statistical Report (17th Lok Sabha, 2-Srinagar PC, Page 382)
+              </p>
+            </div>
+          </div>
+          <a
+            href="https://eci.gov.in/files/file/13712-statistical-report-on-general-elections-2019-to-the-17th-lok-sabha/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-blue-700 text-white hover:bg-blue-800 transition-colors"
+          >
+            <span>ECI Statistical Report 2019</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr className="bg-slate-100/80 border-b border-slate-200 text-slate-700 font-semibold uppercase text-[11px]">
+                <th className="py-2.5 px-4">Metric / Parameter</th>
+                <th className="py-2.5 px-4">Verified Statutory Value</th>
+                <th className="py-2.5 px-4">Explicit Denominator / Method</th>
+                <th className="py-2.5 px-4">Primary Official Citation</th>
+                <th className="py-2.5 px-4">Audit Status</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100 text-slate-800">
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Parliamentary Constituency</td>
+                <td className="py-2.5 px-4 font-mono font-medium">2-Srinagar (Pre-2022 Boundaries)</td>
+                <td className="py-2.5 px-4 text-slate-600">15 Assembly Segments (Srinagar, Budgam, Ganderbal)</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Statistical Report 2019, Vol. I</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Elected Member of Parliament</td>
+                <td className="py-2.5 px-4 font-medium text-slate-900">Dr. Farooq Abdullah</td>
+                <td className="py-2.5 px-4 text-slate-600">Jammu & Kashmir National Conference (JKNC)</td>
+                <td className="py-2.5 px-4 text-slate-600">Table 11: Detailed Results (Page 382)</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Winning Votes</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">1,06,750 votes</td>
+                <td className="py-2.5 px-4 font-mono text-slate-600">Candidate Votes (EVM + Postal)</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 11, Row 1</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Winner's Vote Share</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">57.14% (57.13% on polled)</td>
+                <td className="py-2.5 px-4 font-mono text-slate-600">1,06,750 / 1,86,832 valid votes × 100</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Statistical Report 2019 (Table 11: 57.13%)</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Runner-Up Candidate</td>
+                <td className="py-2.5 px-4 font-medium text-slate-900">Aga Syed Mohsin</td>
+                <td className="py-2.5 px-4 text-slate-600">Jammu & Kashmir Peoples Democratic Party (JKPDP)</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 11, Row 2</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Runner-Up's Votes & Share</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">36,700 votes (19.64%)</td>
+                <td className="py-2.5 px-4 font-mono text-slate-600">36,700 / 1,86,832 valid votes × 100</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 11, Row 2</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Winning Margin</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-emerald-700">70,050 votes (37.49%)</td>
+                <td className="py-2.5 px-4 font-mono text-slate-600">1,06,750 − 36,700 (5.41% of total electors)</td>
+                <td className="py-2.5 px-4 text-slate-600">Derived from official candidate totals</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Total Valid Votes</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">1,86,832 votes</td>
+                <td className="py-2.5 px-4 text-slate-600">Sum of 12 Candidates (1,85,266) + NOTA (1,566)</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 11 Total</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Corrected & Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Rejected Postal Votes</td>
+                <td className="py-2.5 px-4 font-mono font-medium text-amber-700">31 votes</td>
+                <td className="py-2.5 px-4 text-slate-600">Votes Polled (1,86,863) − Valid Votes (1,86,832)</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Statistical Reconciliation Table</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Reconciled</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Total Votes Polled</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">1,86,863 votes</td>
+                <td className="py-2.5 px-4 text-slate-600">1,86,832 Valid + 31 Rejected Postal</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 12: Turnout and Electors Summary</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Registered Electors</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-slate-900">12,95,309 total (12,94,671 general)</td>
+                <td className="py-2.5 px-4 text-slate-600">12,94,671 General Electors + 638 Service Electors</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 12 / Returning Officer Declaration</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified</span></td>
+              </tr>
+              <tr className="hover:bg-slate-50/80">
+                <td className="py-2.5 px-4 font-semibold text-slate-900">Published & Calculated Turnout</td>
+                <td className="py-2.5 px-4 font-mono font-bold text-emerald-700">14.43%</td>
+                <td className="py-2.5 px-4 font-mono text-slate-600">1,86,863 / 12,95,309 × 100 = 14.426% ≈ 14.43%</td>
+                <td className="py-2.5 px-4 text-slate-600">ECI Table 12 Turnout Percentage</td>
+                <td className="py-2.5 px-4"><span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">Verified (Exact Match)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       {/* Critical Limitations */}
       <div className="bg-amber-50 border border-amber-200/90 rounded-xl p-5 text-amber-900 space-y-2">
         <div className="flex items-center gap-2 font-bold text-sm">

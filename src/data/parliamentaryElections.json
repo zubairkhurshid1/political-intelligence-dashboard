@@ -313,16 +313,17 @@
     "pollDate": "2019-04-18",
     "registeredElectors": 1295309,
     "votesPolled": 186863,
-    "validVotes": 186863,
-    "rejectedVotes": 0,
+    "validVotes": 186832,
+    "rejectedVotes": 31,
     "notaVotes": 1566,
     "turnoutPercentage": 14.43,
+    "marginDenominator": "Total Valid Votes (1,86,832)",
     "winner": {
       "candidateName": "Dr. Farooq Abdullah",
       "partyName": "Jammu & Kashmir National Conference",
       "partyAbbreviation": "JKNC",
       "votes": 106750,
-      "voteSharePercentage": 57.13
+      "voteSharePercentage": 57.14
     },
     "runnerUp": {
       "candidateName": "Aga Syed Mohsin",
@@ -341,7 +342,7 @@
         "partyName": "Jammu & Kashmir National Conference",
         "partyAbbreviation": "JKNC",
         "votes": 106750,
-        "voteSharePercentage": 57.13,
+        "voteSharePercentage": 57.14,
         "resultPosition": 1,
         "isWinner": true,
         "depositLost": false
@@ -381,12 +382,89 @@
       },
       {
         "candidateId": "2019-CAND-05",
+        "candidateName": "Bilal Sultan",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1630,
+        "voteSharePercentage": 0.87,
+        "resultPosition": 5,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-06",
+        "candidateName": "Abdul Rashid Banday",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1537,
+        "voteSharePercentage": 0.82,
+        "resultPosition": 6,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-07",
+        "candidateName": "Nazir Ahmad Sofi",
+        "partyName": "Manvadhikar National Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 1507,
+        "voteSharePercentage": 0.81,
+        "resultPosition": 7,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-08",
         "candidateName": "Showkat Hussain Khan",
         "partyName": "Janata Dal (United)",
         "partyAbbreviation": "OTHERS",
         "votes": 1250,
         "voteSharePercentage": 0.67,
-        "resultPosition": 5,
+        "resultPosition": 8,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-09",
+        "candidateName": "Abdual Rashid Ganie",
+        "partyName": "Jammu & Kashmir National Panthers Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 791,
+        "voteSharePercentage": 0.42,
+        "resultPosition": 9,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-10",
+        "candidateName": "Sajjad Ahmad Dar",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 613,
+        "voteSharePercentage": 0.33,
+        "resultPosition": 10,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-11",
+        "candidateName": "Abdul Khaliq Bhat",
+        "partyName": "Shiv Sena",
+        "partyAbbreviation": "OTHERS",
+        "votes": 578,
+        "voteSharePercentage": 0.31,
+        "resultPosition": 11,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2019-CAND-12",
+        "candidateName": "Nazir Ahmad Lone",
+        "partyName": "Rashtriya Jankranti Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 506,
+        "voteSharePercentage": 0.27,
+        "resultPosition": 12,
         "isWinner": false,
         "depositLost": true
       },
@@ -397,24 +475,13 @@
         "partyAbbreviation": "NOTA",
         "votes": 1566,
         "voteSharePercentage": 0.84,
-        "resultPosition": 6,
+        "resultPosition": 13,
         "isWinner": false,
         "depositLost": false
-      },
-      {
-        "candidateId": "2019-CAND-OTHERS",
-        "candidateName": "Other Independent Candidates (7)",
-        "partyName": "Independent",
-        "partyAbbreviation": "IND",
-        "votes": 7193,
-        "voteSharePercentage": 3.85,
-        "resultPosition": 7,
-        "isWinner": false,
-        "depositLost": true
       }
     ],
     "sourceId": "SRC-ECI-LS-2019",
-    "notes": "Election was held under pre-2022 boundaries (Srinagar, Budgam, Ganderbal districts). Characterized by localized boycott calls resulting in 14.43% overall voter turnout."
+    "notes": "Election was conducted under pre-2022 constituency boundaries (15 assembly segments across Srinagar, Budgam, and Ganderbal districts). Total valid votes counted: 186,832 across all 12 candidates and NOTA. 31 rejected postal votes account for the difference between total votes polled (186,863) and valid votes (186,832). Registered electorate comprises 1,294,671 general electors and 638 service electors (total 1,295,309), yielding 14.43% voter turnout."
   },
   {
     "electionYear": 2017,
