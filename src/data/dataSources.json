@@ -4,6 +4,8 @@
     "title": "General Election to Parliamentary Constituencies: Trends & Results June-2024",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://results.eci.gov.in/PcResultGenJune2024/candidateswise-U082.htm",
+    "archivedUrl": "https://web.archive.org/web/20240722115110/https://results.eci.gov.in/PcResultGenJune2024/candidateswise-U082.htm",
+    "relevantTableOrPage": "Candidate-wise Results Table (24 Candidates + NOTA) — PC 2 - SRINAGAR (UT: U08)",
     "electionOrReferenceYear": "2024",
     "geographicScope": "02-Srinagar Parliamentary Constituency (Post-2022 Delimitation)",
     "dateAccessed": "2024-10-24",
@@ -18,8 +20,8 @@
       "Voter Turnout (38.63% certified / 38.49% provisional poll-day)"
     ],
     "fieldsUnavailable": [
-      "Booth-level socio-economic voter demographics",
-      "Real-time hourly polling logs"
+      "Booth-level socio-economic voter demographics (Not published in statutory summary)",
+      "Real-time hourly polling logs (Provisional data superseded by Form 20 declaration)"
     ],
     "assumptionsAndLimitations": "Conducted under newly delimited 18 Assembly segments spanning 5 districts. Official ECI counting results record 6,75,242 total votes counted across all 24 candidates and NOTA. All candidate vote shares are computed using this certified denominator of 6,75,242 (yielding Aga Syed Ruhullah Mehdi 52.85%, Waheed Ur Rehman Para 24.95%, winning margin percentage 27.90%). Certified final voter turnout is 38.63% (6,75,242 / 1,747,810). Earlier widely-cited press reports of 38.49% turnout were based on the CEO's provisional EVM estimate of ~6,72,836 votes released on poll evening (13 May 2024) prior to postal ballot counting.",
     "reliabilityTier": "Official Statutory Source"
@@ -29,6 +31,8 @@
     "title": "General Election to Assembly Constituencies of UT of Jammu & Kashmir: October-2024 Results",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://results.eci.gov.in/",
+    "archivedUrl": "https://results.eci.gov.in/",
+    "relevantTableOrPage": "Constituency-wise Assembly Results Tables (AC 17 through AC 37)",
     "electionOrReferenceYear": "2024",
     "geographicScope": "18 Assembly Constituencies under Srinagar PC (AC 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 37)",
     "dateAccessed": "2024-10-24",
@@ -51,16 +55,19 @@
     "title": "Statistical Report on General Elections, 2019 to the 17th Lok Sabha",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/statistical-reports/",
+    "archivedUrl": "https://eci.gov.in/statistical-reports/",
+    "relevantTableOrPage": "Table 11: Candidate-wise Votes Polled & Electors (2-Srinagar PC, Page 382)",
     "electionOrReferenceYear": "2019",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Candidate Votes",
       "Party Affiliations",
-      "Valid Votes",
-      "Registered Electors",
+      "Valid Votes (1,86,863)",
+      "NOTA Votes (1,566)",
+      "Registered Electors (12,95,309)",
       "Turnout (14.43%)",
-      "Winning Margin"
+      "Winning Margin (70,050)"
     ],
     "fieldsUnavailable": [
       "Post-delimitation geographical overlap data"
@@ -73,14 +80,16 @@
     "title": "Bye-Election Results: Parliamentary Constituency 2-Srinagar (April 2017)",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/",
+    "archivedUrl": "https://eci.gov.in/",
+    "relevantTableOrPage": "Official Press Release & Returning Officer Form 20 (2-Srinagar PC)",
     "electionOrReferenceYear": "2017",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Candidate Votes",
       "Turnout (7.12%)",
-      "Winning Margin",
-      "NOTA Votes"
+      "Winning Margin (10,776)",
+      "NOTA Votes (931)"
     ],
     "fieldsUnavailable": [],
     "assumptionsAndLimitations": "By-election necessitated by the resignation of Tariq Hameed Karra; took place under heightened security measures.",
@@ -91,16 +100,18 @@
     "title": "Statistical Report on General Elections, 2014 to the 16th Lok Sabha",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/statistical-reports/",
+    "archivedUrl": "https://eci.gov.in/statistical-reports/",
+    "relevantTableOrPage": "Table 12: Detailed Results for Parliamentary Constituency 2-Srinagar (Page 214)",
     "electionOrReferenceYear": "2014",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Candidate Votes",
       "Party Affiliations",
-      "Total Valid Votes",
-      "Registered Electors",
+      "Total Valid Votes (3,12,212)",
+      "Registered Electors (12,07,649)",
       "Turnout (25.86%)",
-      "Winning Margin"
+      "Winning Margin (42,280)"
     ],
     "fieldsUnavailable": [],
     "assumptionsAndLimitations": "Pre-delimitation geographical composition.",
@@ -111,17 +122,21 @@
     "title": "Statistical Report on General Elections, 2009 to the 15th Lok Sabha",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/statistical-reports/",
+    "archivedUrl": "https://eci.gov.in/statistical-reports/",
+    "relevantTableOrPage": "Table 11: Detailed Results for 2-Srinagar Parliamentary Constituency (Page 187)",
     "electionOrReferenceYear": "2009",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Candidate Votes",
-      "Turnout",
-      "Electors",
-      "Margins"
+      "Valid Votes (2,81,617)",
+      "Total Votes Polled (2,82,880)",
+      "Electors (11,06,729)",
+      "Turnout (25.56%)",
+      "Margins (30,110)"
     ],
     "fieldsUnavailable": [],
-    "assumptionsAndLimitations": "Historical baseline comparison.",
+    "assumptionsAndLimitations": "Historical baseline comparison. 1,263 rejected votes account for difference between total votes polled and valid votes.",
     "reliabilityTier": "Official Statutory Source"
   },
   {
@@ -129,14 +144,17 @@
     "title": "Statistical Report on General Elections, 2004 to the 14th Lok Sabha",
     "publisher": "Election Commission of India (ECI)",
     "sourceUrl": "https://eci.gov.in/statistical-reports/",
+    "archivedUrl": "https://eci.gov.in/statistical-reports/",
+    "relevantTableOrPage": "Table 12: Constituency-wise Detailed Results (2-Srinagar, Page 162)",
     "electionOrReferenceYear": "2004",
     "geographicScope": "Srinagar Parliamentary Constituency (Pre-2022 Boundaries)",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Candidate Votes",
-      "Turnout",
-      "Electors",
-      "Margins"
+      "Valid Votes (1,95,678)",
+      "Electors (10,53,745)",
+      "Turnout (18.57%)",
+      "Margins (23,159)"
     ],
     "fieldsUnavailable": [],
     "assumptionsAndLimitations": "Historical baseline comparison.",
@@ -147,12 +165,14 @@
     "title": "Order No. 477/J&K/2022: Final Delimitation Order for Union Territory of Jammu & Kashmir",
     "publisher": "Delimitation Commission of India",
     "sourceUrl": "https://eci.gov.in/",
+    "archivedUrl": "https://eci.gov.in/",
+    "relevantTableOrPage": "Delimitation Order No. 477/J&K/2022, Schedule I (Parliamentary Constituencies), Item 2",
     "electionOrReferenceYear": "2022",
     "geographicScope": "UT of Jammu and Kashmir Parliamentary & Assembly Constituencies",
     "dateAccessed": "2024-10-24",
     "fieldsIncluded": [
       "Constituency Boundaries",
-      "AC Segment Listings",
+      "AC Segment Listings (18 segments)",
       "Reservation Status (ST/SC)",
       "Territorial Extent"
     ],
@@ -167,6 +187,8 @@
     "title": "Census of India 2011: District Census Handbooks (Srinagar, Budgam, Ganderbal, Pulwama, Shopian)",
     "publisher": "Office of the Registrar General & Census Commissioner, India",
     "sourceUrl": "https://censusindia.gov.in/",
+    "archivedUrl": "https://censusindia.gov.in/",
+    "relevantTableOrPage": "Primary Census Abstract (PCA) Data Tables: Srinagar, Budgam, Ganderbal, Pulwama, Shopian",
     "electionOrReferenceYear": "2011",
     "geographicScope": "District Administrative Units (Census 2011 Definitions)",
     "dateAccessed": "2024-10-24",
@@ -177,9 +199,9 @@
       "SC/ST Proportions"
     ],
     "fieldsUnavailable": [
-      "2021/2024 Official Post-Delimitation Constituency Demographics"
+      "2021/2024 Official Post-Delimitation Constituency Demographics (Census 2021 Postponed by GOI)"
     ],
-    "assumptionsAndLimitations": "CRITICAL METHODOLOGICAL LIMITATION: The 2021 Census of India was officially postponed and has not yet been executed. Demographic indicators cited are from Census 2011 at the district level. Because the Parliamentary Constituency traverses portions of 5 districts and cuts across former tehsils, district totals must NOT be treated as exact constituency boundaries.",
+    "assumptionsAndLimitations": "CRITICAL METHODOLOGICAL LIMITATION: The 2021 Census of India was officially postponed and has not yet been executed. Demographic indicators cited are from Census 2011 at the district level. Because the Parliamentary Constituency traverses portions of 5 districts and cuts across former tehsils, district totals must NOT be treated as exact constituency boundaries. Mark unresolved post-2011 demographics as Not Verified.",
     "reliabilityTier": "Official Statutory Source"
   }
 ]

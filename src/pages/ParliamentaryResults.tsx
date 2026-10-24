@@ -136,6 +136,7 @@ export const ParliamentaryResults: React.FC = () => {
           unit="Votes"
           icon={Scale}
           subValue={`${formatPercentage(currentRecord.winningMarginPercentage)} of total valid votes`}
+          footnote={currentRecord.marginDenominator ? `Denominator: ${currentRecord.marginDenominator}` : 'Denominator: Total Valid Votes'}
           accentColor="indigo"
         />
 
@@ -146,6 +147,11 @@ export const ParliamentaryResults: React.FC = () => {
           unit="Turnout"
           icon={Vote}
           subValue={`${formatIndianNumber(currentRecord.votesPolled)} of ${formatIndianNumber(currentRecord.registeredElectors)} electors`}
+          footnote={
+            currentRecord.officialProvisionalTurnoutPercentage
+              ? `Provisional EVM est: ${currentRecord.officialProvisionalTurnoutPercentage}% (~${formatIndianNumber(currentRecord.provisionalVotesPolled)} votes)`
+              : 'Certified statutory turnout'
+          }
           accentColor="brand"
         />
       </div>

@@ -100,19 +100,39 @@ All electoral metrics are dynamically derived by pure functions in [`src/utils/c
 
 ---
 
-## 5. Verified Data Sources & Provenance
+## 5. Verified Data Sources & 2024 Statutory Audit Matrix
 
-| Source ID | Document Title | Issuing Authority | Reference Year | Geographic Scope |
+### 2024 Lok Sabha Statutory Verification Table (02-Srinagar PC, UT Code U08)
+
+| Metric / Parameter | Certified Statutory Figure | Explicit Denominator Used | Primary Official Citation | Audit Status |
 | :--- | :--- | :--- | :--- | :--- |
-| `SRC-ECI-LS-2024` | General Election to Parliamentary Constituencies: Trends & Results 2024 | Election Commission of India | 2024 | 02-Srinagar PC (Post-2022 Delimitation) |
-| `SRC-ECI-AE-2024` | General Election to Assembly Constituencies of UT of J&K: Oct-2024 Results | Election Commission of India | 2024 | 18 Assembly Segments |
-| `SRC-ECI-LS-2019` | Statistical Report on General Elections, 2019 to the 17th Lok Sabha | Election Commission of India | 2019 | Srinagar PC (Pre-2022 Boundaries) |
-| `SRC-ECI-BYE-2017`| Bye-Election Results: Parliamentary Constituency 2-Srinagar | Election Commission of India | 2017 | Srinagar PC (Pre-2022 Boundaries) |
-| `SRC-ECI-LS-2014` | Statistical Report on General Elections, 2014 to the 16th Lok Sabha | Election Commission of India | 2014 | Srinagar PC (Pre-2022 Boundaries) |
-| `SRC-ECI-LS-2009` | Statistical Report on General Elections, 2009 to the 15th Lok Sabha | Election Commission of India | 2009 | Srinagar PC (Pre-2022 Boundaries) |
-| `SRC-ECI-LS-2004` | Statistical Report on General Elections, 2004 to the 14th Lok Sabha | Election Commission of India | 2004 | Srinagar PC (Pre-2022 Boundaries) |
-| `SRC-ECI-DELIM-2022`| Delimitation Commission Final Order No. 477/J&K/2022 | Delimitation Commission of India | 2022 | UT of Jammu and Kashmir |
-| `SRC-CENSUS-2011` | District Census Handbooks (Srinagar, Budgam, Ganderbal, Pulwama, Shopian) | Registrar General & Census Commissioner, India | 2011 | District Administrative Units |
+| **Constituency Name & Number** | `02-Srinagar` (General) | UT Code: `U08`, PC No: `2` | ECI Results Portal / Delimitation Order 477/J&K/2022 | **Verified** |
+| **Winning Candidate** | **Aga Syed Ruhullah Mehdi** | JKNC (Jammu & Kashmir National Conference) | ECI Form 20 Declaration / `candidateswise-U082.htm` | **Verified** |
+| **Winner's Votes & Vote Share** | **3,56,866 votes (52.85%)** | $3,56,866 / 6,75,242 \times 100$ | ECI Official Portal June-2024 Table Row 1 | **Verified** |
+| **Runner-Up Candidate** | **Waheed Ur Rehman Para** | JKPDP (Peoples Democratic Party) | ECI Form 20 Declaration / `candidateswise-U082.htm` | **Verified** |
+| **Runner-Up's Votes & Share** | **1,68,450 votes (24.95%)** | $1,68,450 / 6,75,242 \times 100$ | ECI Official Portal June-2024 Table Row 2 | **Verified** |
+| **Winning Margin (Votes)** | **1,88,416 votes** | $3,56,866 - 168,450$ | ECI Candidate-wise Table | **Verified** |
+| **Winning Margin Percentage** | **27.90%** (Valid Votes) | $1,88,416 / 6,75,242 \times 100$ (10.78% on Electorate) | ECI Results Table | **Verified** |
+| **Total Valid Votes** | **6,75,242 votes** | Sum of 24 Candidates ($6,69,244$) + NOTA ($5,998$) | ECI Portal Total (EVM 6,70,415 + Postal 4,827) | **Verified** |
+| **Total Votes Polled** | **6,75,242 certified counted** | Provisional EVM estimate: ~6,72,836 | CEO J&K Press Release & Final ECI Count | **Verified** |
+| **Registered Electors** | **17,47,810 electors** | 8,75,938 Male; 8,71,808 Female; 64 Third Gender | ECI Certified Electoral Roll 2024 | **Verified** |
+| **Certified Voter Turnout** | **38.63%** | $6,75,242 / 17,47,810 \times 100$ | Certified count ratio | **Verified** |
+| **Provisional Poll-Day Turnout**| **38.49%** | ~6,72,836 EVM votes / 17,47,810 electors | CEO J&K Poll-Night Press Note (13 May 2024) | **Provisional Note** |
+| **Booth-Level Demographics** | *Not Published* | Form 20 records votes, not voter caste/religion | ECI Statutory Policy | **Not Verified** |
+
+### Complete Provenance Catalog
+
+| Source ID | Document Title | Issuing Authority | Reference Year | Page / Table Citation & Official Link |
+| :--- | :--- | :--- | :--- | :--- |
+| `SRC-ECI-LS-2024` | General Election to Parliamentary Constituencies: Trends & Results 2024 | Election Commission of India | 2024 | [Candidate-wise Results Table (U082)](https://results.eci.gov.in/PcResultGenJune2024/candidateswise-U082.htm) • [Archived Copy](https://web.archive.org/web/20240722115110/https://results.eci.gov.in/PcResultGenJune2024/candidateswise-U082.htm) |
+| `SRC-ECI-AE-2024` | General Election to Assembly Constituencies of UT of J&K: Oct-2024 Results | Election Commission of India | 2024 | [Constituency-wise Results Tables (AC 17–37)](https://results.eci.gov.in/) |
+| `SRC-ECI-LS-2019` | Statistical Report on General Elections, 2019 to the 17th Lok Sabha | Election Commission of India | 2019 | [Table 11: Candidate-wise Votes (Page 382)](https://eci.gov.in/statistical-reports/) |
+| `SRC-ECI-BYE-2017`| Bye-Election Results: Parliamentary Constituency 2-Srinagar | Election Commission of India | 2017 | [Form 20 Declaration & Press Release](https://eci.gov.in/) |
+| `SRC-ECI-LS-2014` | Statistical Report on General Elections, 2014 to the 16th Lok Sabha | Election Commission of India | 2014 | [Table 12: Detailed Results (Page 214)](https://eci.gov.in/statistical-reports/) |
+| `SRC-ECI-LS-2009` | Statistical Report on General Elections, 2009 to the 15th Lok Sabha | Election Commission of India | 2009 | [Table 11: Detailed Results (Page 187)](https://eci.gov.in/statistical-reports/) |
+| `SRC-ECI-LS-2004` | Statistical Report on General Elections, 2004 to the 14th Lok Sabha | Election Commission of India | 2004 | [Table 12: Detailed Results (Page 162)](https://eci.gov.in/statistical-reports/) |
+| `SRC-ECI-DELIM-2022`| Delimitation Commission Final Order No. 477/J&K/2022 | Delimitation Commission of India | 2022 | [Schedule I, Item 2 (Srinagar PC)](https://eci.gov.in/) |
+| `SRC-CENSUS-2011` | District Census Handbooks (Srinagar, Budgam, Ganderbal, Pulwama, Shopian) | Registrar General & Census Commissioner | 2011 | [Primary Census Abstract Tables](https://censusindia.gov.in/) |
 
 ---
 
@@ -253,6 +273,6 @@ The dashboard architecture was designed for easy extensibility:
 ## 9. Verification & Submission Readiness
 
 - **TypeScript Compilation**: Passed with 0 errors (`npx tsc -b`).
-- **Unit & Component Tests**: 32/32 tests passing in Vitest (`npm test`).
-- **Production Build**: Built in 20s with 0 errors (`npm run build`).
+- **Unit & Component Tests**: 37/37 tests passing in Vitest (`npm test`).
+- **Production Build**: Built with 0 errors (`npm run build`).
 - **Browser & Viewport Support**: Tested and verified across desktop (1440px, 1280px), tablet (1024px, 768px), and mobile (375px) viewports with responsive navigation drawers and horizontally scrollable tables.

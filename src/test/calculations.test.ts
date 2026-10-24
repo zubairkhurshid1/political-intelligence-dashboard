@@ -10,10 +10,30 @@ import {
 
 describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
   describe('calculateVoteShare', () => {
-    it('calculates correct vote share percentage for valid numbers', () => {
+    it('calculates correct vote share percentage for winner (52.85%)', () => {
       // 2024 Srinagar certified: Aga Ruhullah 356,866 out of 675,242 certified votes = 52.85%
       const share = calculateVoteShare(356866, 675242);
       expect(share).toBe(52.85);
+    });
+
+    it('calculates correct vote share percentage for runner-up (24.95%)', () => {
+      // 2024 Srinagar certified: Waheed Para 168,450 out of 675,242 certified votes = 24.95%
+      const runnerUpShare = calculateVoteShare(168450, 675242);
+      expect(runnerUpShare).toBe(24.95);
+    });
+
+    it('calculates correct vote share for NOTA (0.89%)', () => {
+      // 2024 NOTA: 5,998 out of 675,242 certified votes = 0.89%
+      const notaShare = calculateVoteShare(5998, 675242);
+      expect(notaShare).toBe(0.89);
+    });
+
+    it('demonstrates discrepancy if using unverified provisional EVM denominator (672,836)', () => {
+      // 356,866 / 672,836 = 53.04% (the discredited third-party figure)
+      const erroneousShare = calculateVoteShare(356866, 672836);
+      expect(erroneousShare).toBe(53.04);
+      // Demonstrates that ECI official table strictly used 675,242
+      expect(calculateVoteShare(356866, 675242)).toBe(52.85);
     });
 
     it('returns null when valid votes denominator is zero', () => {
@@ -79,6 +99,11 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
     it('calculates margin as percentage of total valid votes', () => {
       // 188,416 margin on 675,242 certified votes = 27.90%
       expect(calculateWinningMarginPercentage(188416, 675242)).toBe(27.9);
+    });
+
+    it('calculates margin as percentage of registered electors when using electorate denominator', () => {
+      // 188,416 margin on 1,747,810 registered electors = 10.78%
+      expect(calculateWinningMarginPercentage(188416, 1747810)).toBe(10.78);
     });
 
     it('returns null when totalValidVotes is zero', () => {

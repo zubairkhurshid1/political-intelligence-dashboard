@@ -8,6 +8,9 @@
     "rejectedVotes": 0,
     "notaVotes": 5998,
     "turnoutPercentage": 38.63,
+    "officialProvisionalTurnoutPercentage": 38.49,
+    "provisionalVotesPolled": 672836,
+    "marginDenominator": "Total Valid Votes (6,75,242)",
     "winner": {
       "candidateName": "Aga Syed Ruhullah Mehdi",
       "partyName": "Jammu & Kashmir National Conference",

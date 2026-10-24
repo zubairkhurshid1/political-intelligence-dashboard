@@ -184,7 +184,7 @@ export const ElectoralTrends: React.FC = () => {
               Vote Share = (Candidate Votes / Total Valid Votes) × 100
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Excludes rejected postal votes. Strictly validated against zero-division (returns <code>null</code> if denominator is ≤ 0).
+              <strong>Denominator: Total Valid Votes</strong> (6,75,242 in 2024). ECI statutory results yield Aga Syed Ruhullah Mehdi: 356,866 / 675,242 = <strong>52.85%</strong>; Waheed Ur Rehman Para: 168,450 / 675,242 = <strong>24.95%</strong>.
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export const ElectoralTrends: React.FC = () => {
               Margin = Winner Votes − Runner-up Votes
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Absolute vote difference between the candidate placed 1st and candidate placed 2nd. Validated for non-negative numbers.
+              Absolute vote difference between 1st and 2nd place candidates. In 2024: 356,866 − 168,450 = <strong>188,416 votes</strong>.
             </p>
           </div>
 
@@ -210,7 +210,7 @@ export const ElectoralTrends: React.FC = () => {
               Margin % = (Margin / Total Valid Votes) × 100
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Expresses the lead as a percentage of all certified valid votes cast across the constituency.
+              <strong>Documented Denominator: Total Valid Votes</strong> (6,75,242). In 2024: 188,416 / 675,242 = <strong>27.90%</strong>. (Note: as a proportion of total registered electorate, the margin is 10.78%).
             </p>
           </div>
 
@@ -220,10 +220,10 @@ export const ElectoralTrends: React.FC = () => {
               4. Certified Voter Turnout
             </span>
             <div className="font-mono text-xs bg-white p-2.5 rounded border border-slate-200 text-slate-800">
-              Turnout % = (Total Votes Polled / Registered Electors) × 100
+              Turnout % = (Total Votes Counted / Registered Electors) × 100
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Denominator represents certified electors on electoral roll. Does not conflate votes polled with valid votes.
+              <strong>Denominator: Certified Electors</strong> (17,47,810). Certified final turnout is 6,75,242 / 17,47,810 = <strong>38.63%</strong>. The widely cited <strong>38.49%</strong> figure was the provisional poll-day EVM estimate (~6,72,836 votes) before postal ballot addition.
             </p>
           </div>
 

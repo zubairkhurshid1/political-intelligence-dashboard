@@ -54,6 +54,9 @@ export interface ParliamentaryElectionRecord {
   rejectedVotes: number;
   notaVotes?: number;
   turnoutPercentage: number;
+  officialProvisionalTurnoutPercentage?: number;
+  provisionalVotesPolled?: number;
+  marginDenominator?: string;
   winner: {
     candidateName: string;
     partyName: string;
@@ -127,6 +130,8 @@ export interface DataSourceMetadata {
   title: string;
   publisher: string;
   sourceUrl: string;
+  archivedUrl?: string;
+  relevantTableOrPage?: string;
   electionOrReferenceYear: string;
   geographicScope: string;
   dateAccessed: string;
