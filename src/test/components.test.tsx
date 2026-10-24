@@ -13,7 +13,7 @@ const mockCandidates: CandidateResult[] = [
     partyName: 'Jammu & Kashmir National Conference',
     partyAbbreviation: 'JKNC',
     votes: 356866,
-    voteSharePercentage: 53.04,
+    voteSharePercentage: 52.85,
     resultPosition: 1,
     isWinner: true,
   },
@@ -23,7 +23,7 @@ const mockCandidates: CandidateResult[] = [
     partyName: 'Jammu & Kashmir Peoples Democratic Party',
     partyAbbreviation: 'JKPDP',
     votes: 168450,
-    voteSharePercentage: 25.04,
+    voteSharePercentage: 24.95,
     resultPosition: 2,
     isWinner: false,
   },
@@ -33,7 +33,7 @@ const mockCandidates: CandidateResult[] = [
     partyName: 'Jammu and Kashmir Apni Party',
     partyAbbreviation: 'APNI PARTY',
     votes: 65954,
-    voteSharePercentage: 9.8,
+    voteSharePercentage: 9.77,
     resultPosition: 3,
     isWinner: false,
   },
@@ -120,7 +120,7 @@ describe('Component & Interaction Tests', () => {
       render(
         <ResultsTable
           candidates={mockCandidates}
-          totalValidVotes={672836}
+          totalValidVotes={675242}
           electionYear={2024}
         />
       );
@@ -141,7 +141,7 @@ describe('Component & Interaction Tests', () => {
       render(
         <ResultsTable
           candidates={mockCandidates}
-          totalValidVotes={672836}
+          totalValidVotes={675242}
           electionYear={2024}
         />
       );

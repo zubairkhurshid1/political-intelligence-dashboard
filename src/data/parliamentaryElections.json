@@ -3,27 +3,27 @@
     "electionYear": 2024,
     "pollDate": "2024-05-13",
     "registeredElectors": 1747810,
-    "votesPolled": 672836,
-    "validVotes": 672836,
+    "votesPolled": 675242,
+    "validVotes": 675242,
     "rejectedVotes": 0,
     "notaVotes": 5998,
-    "turnoutPercentage": 38.49,
+    "turnoutPercentage": 38.63,
     "winner": {
       "candidateName": "Aga Syed Ruhullah Mehdi",
       "partyName": "Jammu & Kashmir National Conference",
       "partyAbbreviation": "JKNC",
       "votes": 356866,
-      "voteSharePercentage": 53.04
+      "voteSharePercentage": 52.85
     },
     "runnerUp": {
       "candidateName": "Waheed Ur Rehman Para",
       "partyName": "Jammu & Kashmir Peoples Democratic Party",
       "partyAbbreviation": "JKPDP",
       "votes": 168450,
-      "voteSharePercentage": 25.04
+      "voteSharePercentage": 24.95
     },
     "winningMargin": 188416,
-    "winningMarginPercentage": 28.00,
+    "winningMarginPercentage": 27.90,
     "totalCandidates": 24,
     "candidates": [
       {
@@ -32,7 +32,7 @@
         "partyName": "Jammu & Kashmir National Conference",
         "partyAbbreviation": "JKNC",
         "votes": 356866,
-        "voteSharePercentage": 53.04,
+        "voteSharePercentage": 52.85,
         "resultPosition": 1,
         "isWinner": true,
         "depositLost": false
@@ -43,7 +43,7 @@
         "partyName": "Jammu & Kashmir Peoples Democratic Party",
         "partyAbbreviation": "JKPDP",
         "votes": 168450,
-        "voteSharePercentage": 25.04,
+        "voteSharePercentage": 24.95,
         "resultPosition": 2,
         "isWinner": false,
         "depositLost": false
@@ -54,7 +54,7 @@
         "partyName": "Jammu and Kashmir Apni Party",
         "partyAbbreviation": "APNI PARTY",
         "votes": 65954,
-        "voteSharePercentage": 9.80,
+        "voteSharePercentage": 9.77,
         "resultPosition": 3,
         "isWinner": false,
         "depositLost": true
@@ -65,30 +65,228 @@
         "partyName": "Democratic Progressive Azad Party",
         "partyAbbreviation": "OTHERS",
         "votes": 15104,
-        "voteSharePercentage": 2.25,
+        "voteSharePercentage": 2.24,
         "resultPosition": 4,
         "isWinner": false,
         "depositLost": true
       },
       {
         "candidateId": "2024-CAND-05",
-        "candidateName": "Hakikat Singh",
+        "candidateName": "Sheeban Ashai",
         "partyName": "Independent",
         "partyAbbreviation": "IND",
-        "votes": 12473,
-        "voteSharePercentage": 1.85,
+        "votes": 13071,
+        "voteSharePercentage": 1.94,
         "resultPosition": 5,
         "isWinner": false,
         "depositLost": true
       },
       {
         "candidateId": "2024-CAND-06",
-        "candidateName": "Rubina Akhtar",
+        "candidateName": "Sayim Mustafa",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 8880,
+        "voteSharePercentage": 1.32,
+        "resultPosition": 6,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-07",
+        "candidateName": "Jibran Firdous Dar",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 5498,
+        "voteSharePercentage": 0.81,
+        "resultPosition": 7,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-08",
+        "candidateName": "Jahangir Ahmad Sheikh",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 4422,
+        "voteSharePercentage": 0.65,
+        "resultPosition": 8,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-09",
+        "candidateName": "Hakikat Singh",
+        "partyName": "Jammu & Kashmir National Panthers Party (Bhim)",
+        "partyAbbreviation": "OTHERS",
+        "votes": 3778,
+        "voteSharePercentage": 0.56,
+        "resultPosition": 9,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-10",
+        "candidateName": "Sajad Ahmad Dar",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 3764,
+        "voteSharePercentage": 0.56,
+        "resultPosition": 10,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-11",
+        "candidateName": "Rubina Akhter",
         "partyName": "National Loktantrik Party",
         "partyAbbreviation": "OTHERS",
-        "votes": 8740,
-        "voteSharePercentage": 1.30,
-        "resultPosition": 6,
+        "votes": 2876,
+        "voteSharePercentage": 0.43,
+        "resultPosition": 11,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-12",
+        "candidateName": "Waseem Hassan Sheikh",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 2855,
+        "voteSharePercentage": 0.42,
+        "resultPosition": 12,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-13",
+        "candidateName": "Riyaz Ahmad Bhat",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 2792,
+        "voteSharePercentage": 0.41,
+        "resultPosition": 13,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-14",
+        "candidateName": "Fayaz Ahmad Butt",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 2227,
+        "voteSharePercentage": 0.33,
+        "resultPosition": 14,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-15",
+        "candidateName": "Shahnaz Hussain Shah",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 2203,
+        "voteSharePercentage": 0.33,
+        "resultPosition": 15,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-16",
+        "candidateName": "Mohd Yousuf Bhat",
+        "partyName": "Gana Suraksha Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 1898,
+        "voteSharePercentage": 0.28,
+        "resultPosition": 16,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-17",
+        "candidateName": "Waheeda Tabasum Shah",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1606,
+        "voteSharePercentage": 0.24,
+        "resultPosition": 17,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-18",
+        "candidateName": "Nisar Ahmad Ahangar",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1124,
+        "voteSharePercentage": 0.17,
+        "resultPosition": 18,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-19",
+        "candidateName": "Mirza Sajad Hussain Beigh",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1064,
+        "voteSharePercentage": 0.16,
+        "resultPosition": 19,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-20",
+        "candidateName": "Ghulam Mohammad Wani",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 1040,
+        "voteSharePercentage": 0.15,
+        "resultPosition": 20,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-21",
+        "candidateName": "Amin Dar",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 996,
+        "voteSharePercentage": 0.15,
+        "resultPosition": 21,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-22",
+        "candidateName": "Javeed Ahmad Wani",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 932,
+        "voteSharePercentage": 0.14,
+        "resultPosition": 22,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-23",
+        "candidateName": "Younis Ahmad Mir",
+        "partyName": "Bharat Jodo Party",
+        "partyAbbreviation": "OTHERS",
+        "votes": 925,
+        "voteSharePercentage": 0.14,
+        "resultPosition": 23,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
+        "candidateId": "2024-CAND-24",
+        "candidateName": "Dr Qazi Ashraf",
+        "partyName": "Independent",
+        "partyAbbreviation": "IND",
+        "votes": 919,
+        "voteSharePercentage": 0.14,
+        "resultPosition": 24,
         "isWinner": false,
         "depositLost": true
       },
@@ -99,24 +297,13 @@
         "partyAbbreviation": "NOTA",
         "votes": 5998,
         "voteSharePercentage": 0.89,
-        "resultPosition": 7,
+        "resultPosition": 25,
         "isWinner": false,
         "depositLost": false
-      },
-      {
-        "candidateId": "2024-CAND-OTHERS",
-        "candidateName": "Other Independent & Registered Candidates (18)",
-        "partyName": "Other Candidates",
-        "partyAbbreviation": "OTHERS",
-        "votes": 39251,
-        "voteSharePercentage": 5.83,
-        "resultPosition": 8,
-        "isWinner": false,
-        "depositLost": true
       }
     ],
     "sourceId": "SRC-ECI-LS-2024",
-    "notes": "First Parliamentary election conducted under post-2022 redrawn constituency boundaries covering 18 Assembly segments. Voter turnout witnessed a historic resurgence to 38.49% compared to 14.43% in 2019."
+    "notes": "First Parliamentary election conducted under post-2022 redrawn constituency boundaries covering 18 Assembly segments. Certified ECI counting results record 6,75,242 total votes counted (52.85% winner vote share, 38.63% certified turnout). Provisional poll-day estimates on 13 May 2024 reported 38.49% turnout based on initial EVM figures (~6,72,836 votes)."
   },
   {
     "electionYear": 2019,
@@ -125,7 +312,7 @@
     "votesPolled": 186863,
     "validVotes": 186863,
     "rejectedVotes": 0,
-    "notaVotes": 5188,
+    "notaVotes": 1566,
     "turnoutPercentage": 14.43,
     "winner": {
       "candidateName": "Dr. Farooq Abdullah",
@@ -190,24 +377,35 @@
         "depositLost": true
       },
       {
+        "candidateId": "2019-CAND-05",
+        "candidateName": "Showkat Hussain Khan",
+        "partyName": "Janata Dal (United)",
+        "partyAbbreviation": "OTHERS",
+        "votes": 1250,
+        "voteSharePercentage": 0.67,
+        "resultPosition": 5,
+        "isWinner": false,
+        "depositLost": true
+      },
+      {
         "candidateId": "2019-CAND-NOTA",
         "candidateName": "None of the Above (NOTA)",
         "partyName": "None of the Above",
         "partyAbbreviation": "NOTA",
-        "votes": 5188,
-        "voteSharePercentage": 2.78,
-        "resultPosition": 5,
+        "votes": 1566,
+        "voteSharePercentage": 0.84,
+        "resultPosition": 6,
         "isWinner": false,
         "depositLost": false
       },
       {
         "candidateId": "2019-CAND-OTHERS",
-        "candidateName": "Other Independent Candidates (8)",
+        "candidateName": "Other Independent Candidates (7)",
         "partyName": "Independent",
         "partyAbbreviation": "IND",
-        "votes": 4821,
-        "voteSharePercentage": 2.58,
-        "resultPosition": 6,
+        "votes": 7193,
+        "voteSharePercentage": 3.85,
+        "resultPosition": 7,
         "isWinner": false,
         "depositLost": true
       }

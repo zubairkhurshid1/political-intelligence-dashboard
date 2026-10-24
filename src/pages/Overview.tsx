@@ -111,10 +111,10 @@ export const Overview: React.FC = () => {
           unit="Turnout"
           icon={Vote}
           trend={{
-            value: 24.06,
+            value: 24.2,
             label: 'vs 2019 (14.43%)',
           }}
-          subValue={`${formatIndianNumber(latestElection?.votesPolled)} total votes polled`}
+          subValue={`${formatIndianNumber(latestElection?.votesPolled)} certified votes (38.49% poll-day EVM est.)`}
           accentColor="emerald"
         />
 

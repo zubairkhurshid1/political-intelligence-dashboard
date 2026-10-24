@@ -11,9 +11,9 @@ import {
 describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
   describe('calculateVoteShare', () => {
     it('calculates correct vote share percentage for valid numbers', () => {
-      // 2024 Srinagar: Aga Ruhullah 356,866 out of 672,836 valid votes
-      const share = calculateVoteShare(356866, 672836);
-      expect(share).toBe(53.04);
+      // 2024 Srinagar certified: Aga Ruhullah 356,866 out of 675,242 certified votes = 52.85%
+      const share = calculateVoteShare(356866, 675242);
+      expect(share).toBe(52.85);
     });
 
     it('returns null when valid votes denominator is zero', () => {
@@ -77,8 +77,8 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
 
   describe('calculateWinningMarginPercentage', () => {
     it('calculates margin as percentage of total valid votes', () => {
-      // 188416 margin on 672836 valid votes = 28.00%
-      expect(calculateWinningMarginPercentage(188416, 672836)).toBe(28.0);
+      // 188,416 margin on 675,242 certified votes = 27.90%
+      expect(calculateWinningMarginPercentage(188416, 675242)).toBe(27.9);
     });
 
     it('returns null when totalValidVotes is zero', () => {
@@ -93,9 +93,15 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
 
   describe('calculateVoterTurnout', () => {
     it('calculates turnout percentage from polled votes and registered electors', () => {
-      // 672836 polled / 1747810 registered = 38.4959... rounded to 2 decimal places = 38.5
-      const turnout = calculateVoterTurnout(672836, 1747810);
-      expect(turnout).toBe(38.5);
+      // 675,242 certified polled / 1,747,810 registered = 38.6336... -> 38.63%
+      const turnout = calculateVoterTurnout(675242, 1747810);
+      expect(turnout).toBe(38.63);
+    });
+
+    it('handles poll-day provisional turnout estimate calculation accurately', () => {
+      // 672,836 provisional / 1,747,810 registered = 38.4959... rounded to 2 decimal places = 38.5%
+      const provisional = calculateVoterTurnout(672836, 1747810);
+      expect(provisional).toBe(38.5);
     });
 
     it('returns null when registered electors is zero', () => {
@@ -115,12 +121,13 @@ describe('Electoral Calculations — Formula & Edge-Case Unit Tests', () => {
 
   describe('calculateVoteShareChange', () => {
     it('calculates positive vote share change correctly', () => {
-      // e.g. 53.04% - 37.04% = +16.00%
-      expect(calculateVoteShareChange(53.04, 37.04)).toBe(16.0);
+      // e.g. 52.85% - 37.04% = +15.81%
+      expect(calculateVoteShareChange(52.85, 37.04)).toBe(15.81);
     });
 
     it('calculates negative vote share swing correctly', () => {
-      expect(calculateVoteShareChange(25.04, 50.58)).toBe(-25.54);
+      // e.g. 24.95% - 50.58% = -25.63%
+      expect(calculateVoteShareChange(24.95, 50.58)).toBe(-25.63);
     });
 
     it('returns null when either share is null or undefined', () => {

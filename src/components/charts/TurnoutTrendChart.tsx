@@ -119,7 +119,7 @@ export const TurnoutTrendChart: React.FC<TurnoutTrendChartProps> = ({ data }) =>
       <div className="mt-3 text-[11px] text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-lg border border-slate-100 flex items-start gap-2">
         <span className="font-semibold text-slate-700 shrink-0">Key Milestone:</span>
         <span>
-          2024 witnessed a remarkable voter turnout surge to <strong>38.49%</strong> (6,72,836 votes polled out of 17,47,810 electors), breaking multi-decade lows of 7.12% (2017) and 14.43% (2019).
+          2024 witnessed a remarkable voter turnout surge to <strong>38.63%</strong> certified (6,75,242 votes polled out of 1,747,810 electors; provisional poll-day EVM estimate was 38.49%), breaking multi-decade lows of 7.12% (2017) and 14.43% (2019).
         </span>
       </div>
     </div>

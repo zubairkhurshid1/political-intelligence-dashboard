@@ -3,7 +3,7 @@
     "sourceId": "SRC-ECI-LS-2024",
     "title": "General Election to Parliamentary Constituencies: Trends & Results June-2024",
     "publisher": "Election Commission of India (ECI)",
-    "sourceUrl": "https://results.eci.gov.in/",
+    "sourceUrl": "https://results.eci.gov.in/PcResultGenJune2024/candidateswise-U082.htm",
     "electionOrReferenceYear": "2024",
     "geographicScope": "02-Srinagar Parliamentary Constituency (Post-2022 Delimitation)",
     "dateAccessed": "2024-10-24",
@@ -12,16 +12,16 @@
       "Party Affiliation",
       "EVM Votes",
       "Postal Votes",
-      "Total Valid Votes",
-      "Winning Margin",
-      "Registered Electors",
-      "Voter Turnout"
+      "Total Valid Votes (6,75,242)",
+      "Winning Margin (1,88,416)",
+      "Registered Electors (1,747,810)",
+      "Voter Turnout (38.63% certified / 38.49% provisional poll-day)"
     ],
     "fieldsUnavailable": [
       "Booth-level socio-economic voter demographics",
       "Real-time hourly polling logs"
     ],
-    "assumptionsAndLimitations": "Conducted under newly delimited 18 Assembly segments spanning 5 districts. Totals are derived from statutory ECI Form 20 / official result portal declaration.",
+    "assumptionsAndLimitations": "Conducted under newly delimited 18 Assembly segments spanning 5 districts. Official ECI counting results record 6,75,242 total votes counted across all 24 candidates and NOTA. All candidate vote shares are computed using this certified denominator of 6,75,242 (yielding Aga Syed Ruhullah Mehdi 52.85%, Waheed Ur Rehman Para 24.95%, winning margin percentage 27.90%). Certified final voter turnout is 38.63% (6,75,242 / 1,747,810). Earlier widely-cited press reports of 38.49% turnout were based on the CEO's provisional EVM estimate of ~6,72,836 votes released on poll evening (13 May 2024) prior to postal ballot counting.",
     "reliabilityTier": "Official Statutory Source"
   },
   {

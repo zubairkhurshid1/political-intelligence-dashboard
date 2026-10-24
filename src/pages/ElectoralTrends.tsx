@@ -51,11 +51,11 @@ export const ElectoralTrends: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <KpiCard
           title="Turnout Peak"
-          value="38.49%"
+          value="38.63%"
           referenceYear="2024"
           unit="Turnout"
           icon={TrendingUp}
-          subValue="6,72,836 certified votes polled"
+          subValue="6,75,242 certified votes (38.49% poll-day EVM est.)"
           accentColor="emerald"
         />
 
